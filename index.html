@@ -669,6 +669,32 @@
       text-decoration: underline;
     }
 
+    .lang-links {
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1rem;
+    }
+
+    .lang-link {
+      color: var(--text-dim) !important;
+      text-decoration: none;
+      transition: color 0.15s ease;
+      cursor: pointer;
+    }
+
+    .lang-link:hover {
+      color: #fff !important;
+      text-decoration: underline;
+    }
+
+    .lang-link.active {
+      color: var(--accent) !important;
+      font-weight: 700;
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       .header-inner {
@@ -1054,6 +1080,19 @@
 
   <footer>
     <p><span data-i18n="footer_text">Z Route: Redemption Capitol War Event Intelligence • Server 117 • Maintained by</span> <a href="https://github.com/JeffxLabs" target="_blank">JeffxLabs</a></p>
+    <div class="lang-links">
+      <a href="?lang=en" class="lang-link" data-lang="en">🇬🇧 English</a>
+      <a href="?lang=fr" class="lang-link" data-lang="fr">🇫🇷 Français</a>
+      <a href="?lang=ru" class="lang-link" data-lang="ru">🇷🇺 Русский</a>
+      <a href="?lang=tr" class="lang-link" data-lang="tr">🇹🇷 Türkçe</a>
+      <a href="?lang=pl" class="lang-link" data-lang="pl">🇵🇱 Polski</a>
+      <a href="?lang=es" class="lang-link" data-lang="es">🇪🇸 Español</a>
+      <a href="?lang=pt" class="lang-link" data-lang="pt">🇵🇹 Português</a>
+      <a href="?lang=de" class="lang-link" data-lang="de">🇩🇪 Deutsch</a>
+      <a href="?lang=ko" class="lang-link" data-lang="ko">🇰🇷 한국어</a>
+      <a href="?lang=ja" class="lang-link" data-lang="ja">🇯🇵 日本語</a>
+      <a href="?lang=zh" class="lang-link" data-lang="zh">🇨🇳 简体中文</a>
+    </div>
   </footer>
 
   <script>
@@ -1069,39 +1108,106 @@
     let playerSearchQuery = "";
     let currentLang = "en";
 
-    // Localization helpers
-    function initLanguage() {
-      const saved = localStorage.getItem("zr_lang");
-      if (saved && window.I18N && window.I18N[saved]) {
-        currentLang = saved;
-      } else {
+    // Localization & URL helpers
+    function getRequestedLanguage() {
+      // 1. Check URL query params: ?lang=fr or ?l=fr
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const qLang = params.get("lang") || params.get("l");
+        if (qLang) {
+          const code = qLang.trim().toLowerCase().split(/[-_]/)[0];
+          if (window.I18N && window.I18N[code]) return code;
+        }
+      } catch (e) {}
+
+      // 2. Check URL hash: #lang=fr, #/fr, #fr
+      try {
+        const rawHash = (window.location.hash || "").replace(/^#\/?/, "").toLowerCase();
+        const hashMatch = rawHash.match(/(?:lang=)?([a-z]{2})/);
+        if (hashMatch && window.I18N && window.I18N[hashMatch[1]]) {
+          return hashMatch[1];
+        }
+      } catch (e) {}
+
+      // 3. Check localStorage
+      try {
+        const saved = localStorage.getItem("zr_lang");
+        if (saved && window.I18N && window.I18N[saved]) return saved;
+      } catch (e) {}
+
+      // 4. Check navigator languages
+      try {
         const navLangs = navigator.languages || [navigator.language || navigator.userLanguage || "en"];
         for (const l of navLangs) {
-          const code = l.toLowerCase().split("-")[0];
-          if (window.I18N && window.I18N[code]) {
-            currentLang = code;
-            break;
-          }
+          if (!l) continue;
+          const code = l.toLowerCase().split(/[-_]/)[0];
+          if (window.I18N && window.I18N[code]) return code;
         }
-      }
-      const select = document.getElementById("langSelect");
-      if (select) {
-        select.value = currentLang;
-      }
-      applyTranslations();
+      } catch (e) {}
+
+      return "en";
     }
 
-    function setLanguage(lang) {
-      if (window.I18N && window.I18N[lang]) {
-        currentLang = lang;
+    function initLanguage() {
+      const initialLang = getRequestedLanguage();
+      setLanguage(initialLang, false);
+
+      // Listen for browser navigation (back/forward) or hash changes
+      window.addEventListener("popstate", () => {
+        const lang = getRequestedLanguage();
+        if (lang !== currentLang) {
+          setLanguage(lang, false);
+        }
+      });
+      window.addEventListener("hashchange", () => {
+        const lang = getRequestedLanguage();
+        if (lang !== currentLang) {
+          setLanguage(lang, false);
+        }
+      });
+    }
+
+    function setLanguage(lang, updateUrl = true) {
+      if (!window.I18N || !window.I18N[lang]) return;
+      currentLang = lang;
+      window.currentLang = lang;
+      try {
         localStorage.setItem("zr_lang", lang);
-        applyTranslations();
+      } catch (e) {}
+
+      // Sync select dropdown
+      const select = document.getElementById("langSelect");
+      if (select && select.value !== lang) {
+        select.value = lang;
+      }
+
+      // Update active state on footer language links
+      document.querySelectorAll(".lang-link").forEach(a => {
+        if (a.dataset.lang === lang) {
+          a.classList.add("active");
+        } else {
+          a.classList.remove("active");
+        }
+      });
+
+      // Update URL query parameter without page reload
+      if (updateUrl && window.history && window.history.replaceState) {
+        try {
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", lang);
+          window.history.replaceState({}, "", url.toString());
+        } catch (e) {}
+      }
+
+      applyTranslations();
+      if (eventData && eventData.alliances && eventData.alliances.length) {
         renderHeroAndKPIs();
         renderServerSpotlights();
         renderAlliancesTable();
         renderPlayersTable(false);
       }
     }
+    window.setLanguage = setLanguage;
 
     function t(key) {
       if (window.I18N && window.I18N[currentLang] && window.I18N[currentLang][key]) {
@@ -1200,9 +1306,10 @@
       }
 
       // Server Breakdown
-      const s117 = m.servers["117"] || { points: 0, point_share_pct: 0, players: 0 };
-      const s119 = m.servers["119"] || { points: 0, point_share_pct: 0, players: 0 };
-      const s113 = m.servers["113"] || { points: 0, point_share_pct: 0, players: 0 };
+      const servers = (m && m.servers) || {};
+      const s117 = servers["117"] || { points: 0, point_share_pct: 0, players: 0 };
+      const s119 = servers["119"] || { points: 0, point_share_pct: 0, players: 0 };
+      const s113 = servers["113"] || { points: 0, point_share_pct: 0, players: 0 };
 
       document.getElementById("s119PtsHeader").textContent = `${(s119.points / 1e6).toFixed(1)}M (${s119.point_share_pct}%)`;
       document.getElementById("s117PtsHeader").textContent = `${(s117.points / 1e6).toFixed(1)}M (${s117.point_share_pct}%)`;
@@ -1421,14 +1528,53 @@
         tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag));
     }
 
+    // Tab Navigation & URL Sync
+    function switchTab(tabId, updateUrl = true) {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-content").forEach(c => c.style.display = "none");
+      const targetBtn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+      if (targetBtn) targetBtn.classList.add("active");
+      const targetContent = document.getElementById(tabId);
+      if (targetContent) targetContent.style.display = "block";
+
+      if (updateUrl && window.history && window.history.replaceState) {
+        try {
+          const url = new URL(window.location.href);
+          const shortTab = tabId.replace("tab-", "");
+          if (shortTab === "overview") {
+            url.searchParams.delete("tab");
+          } else {
+            url.searchParams.set("tab", shortTab);
+          }
+          window.history.replaceState({}, "", url.toString());
+        } catch (e) {}
+      }
+    }
+
+    function initTabsFromUrl() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const qTab = params.get("tab");
+        const hash = (window.location.hash || "").replace(/^#/, "");
+        const tabName = qTab || (hash.startsWith("tab-") ? hash.replace("tab-", "") : null);
+        if (tabName) {
+          const targetTabId = tabName.startsWith("tab-") ? tabName : `tab-${tabName}`;
+          switchTab(targetTabId, false);
+        }
+      } catch (e) {}
+    }
+
     // Event Listeners
     document.querySelectorAll(".tab-btn").forEach(btn => {
       btn.addEventListener("click", () => {
-        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-        document.querySelectorAll(".tab-content").forEach(c => c.style.display = "none");
-        btn.classList.add("active");
-        const target = document.getElementById(btn.dataset.tab);
-        if (target) target.style.display = "block";
+        switchTab(btn.dataset.tab, true);
+      });
+    });
+
+    document.querySelectorAll(".lang-link").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        setLanguage(link.dataset.lang, true);
       });
     });
 
@@ -1481,11 +1627,12 @@
     });
 
     document.getElementById("langSelect").addEventListener("change", (e) => {
-      setLanguage(e.target.value);
+      setLanguage(e.target.value, true);
     });
 
     // Initialize
     initLanguage();
+    initTabsFromUrl();
     loadEventData(currentEventId);
   </script>
 </body>
