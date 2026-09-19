@@ -10,21 +10,9 @@
   "servers": {
     "117": {
       "name": "Server 117 (Home)",
-      "players": 881,
-      "points": 270561864,
-      "point_share_pct": 35.0
-    },
-    "119": {
-      "name": "Server 119 (Visiting)",
-      "players": 498,
-      "points": 500233739,
-      "point_share_pct": 64.71
-    },
-    "113": {
-      "name": "Server 113 (Cross-server)",
-      "players": 19,
-      "points": 2278322,
-      "point_share_pct": 0.29
+      "players": 1398,
+      "points": 773073925,
+      "point_share_pct": 100.0
     }
   }
 }
