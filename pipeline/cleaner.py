@@ -41,7 +41,7 @@ def clean_player_record(record, home_server="117", visiting_server="119"):
     raw_ally = record.get("alliance", "").strip()
     pts = record.get("points")
 
-    # Detect server
+    # Detect server directly from raw alliance string BEFORE stripping
     if f"S{visiting_server}" in raw_ally or visiting_server in raw_ally:
         server = visiting_server
     elif "S113" in raw_ally or "113" in raw_ally:
@@ -52,20 +52,19 @@ def clean_player_record(record, home_server="117", visiting_server="119"):
         # Unlabelled alliances belong to home server
         server = home_server
 
-    # Normalize alliance
-    norm_ally = ALLIANCE_NORMALIZATION_MAP.get(raw_ally, raw_ally)
-    base_ally = re.sub(r'\s*S\d+\s*$', '', norm_ally).strip()
-    norm_ally = ALLIANCE_NORMALIZATION_MAP.get(base_ally, base_ally)
-
-    # Shift fixes for specific ranks if commander was captured as alliance
+    # Handle shifted commander/alliance rows if OCR missed player name on top line
     if rank == 163 and cmd.startswith("[STLG]"):
         cmd = "Commander_163"
-        norm_ally = "[STLG] SteelLegion"
-        server = "119"
+        raw_ally = "[STLG] SteelLegion S119"
+        server = visiting_server
     elif rank == 168 and cmd.startswith("[TSR2]"):
         cmd = "Commander_168"
-        norm_ally = "[TSR2] TheShardofReality2"
-        server = "119"
+        raw_ally = "[TSR2] TheShardofReality2 S119"
+        server = visiting_server
+
+    # Strip trailing server identifier (e.g. S119)
+    clean_ally = re.sub(r'\s*S\d+\s*$', '', raw_ally).strip()
+    norm_ally = ALLIANCE_NORMALIZATION_MAP.get(clean_ally, clean_ally)
 
     tag, name = parse_tag_and_name(norm_ally)
     full_display = f"[{tag}] {name}".strip() if tag else (name or "No Alliance")
