@@ -65,9 +65,9 @@
   {
     "rank": 8,
     "commander": "ViE",
-    "alliance": "[P1MP] JU1CER",
+    "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
-    "alliance_name": "JU1CER",
+    "alliance_name": "JU1CE",
     "server": "117",
     "points": 5300951
   },
@@ -191,9 +191,9 @@
   {
     "rank": 22,
     "commander": "BoredAtWork",
-    "alliance": "[P1MP] JU1CER",
+    "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
-    "alliance_name": "JU1CER",
+    "alliance_name": "JU1CE",
     "server": "117",
     "points": 2760105
   },
@@ -605,9 +605,9 @@
   {
     "rank": 68,
     "commander": "Татали",
-    "alliance": "[CLAV] ВОЙНЫ-",
+    "alliance": "[CLAV] ВОЙНЫ",
     "alliance_tag": "CLAV",
-    "alliance_name": "ВОЙНЫ-",
+    "alliance_name": "ВОЙНЫ",
     "server": "119",
     "points": 1989235
   },
@@ -1370,9 +1370,9 @@
   {
     "rank": 153,
     "commander": "paNika",
-    "alliance": "[CLAV] ВОЙНЫ-",
+    "alliance": "[CLAV] ВОЙНЫ",
     "alliance_tag": "CLAV",
-    "alliance_name": "ВОЙНЫ-",
+    "alliance_name": "ВОЙНЫ",
     "server": "119",
     "points": 1587041
   },
@@ -1459,10 +1459,10 @@
   },
   {
     "rank": 163,
-    "commander": "[STLG] SteelLegion",
-    "alliance": "No Alliance",
-    "alliance_tag": "",
-    "alliance_name": "",
+    "commander": "Commander_163",
+    "alliance": "[STLG] SteelLegion",
+    "alliance_tag": "STLG",
+    "alliance_name": "SteelLegion",
     "server": "119",
     "points": 1578026
   },
@@ -1504,10 +1504,10 @@
   },
   {
     "rank": 168,
-    "commander": "[TSR2] TheShardofReality2",
-    "alliance": "No Alliance",
-    "alliance_tag": "",
-    "alliance_name": "",
+    "commander": "Commander_168",
+    "alliance": "[TSR2] TheShardofReality2",
+    "alliance_tag": "TSR2",
+    "alliance_name": "TheShardofReality2",
     "server": "119",
     "points": 1568347
   },
@@ -1658,9 +1658,9 @@
   {
     "rank": 185,
     "commander": "Rostov-Angeles",
-    "alliance": "[CLAV] ВОЙНЫ-",
+    "alliance": "[CLAV] ВОЙНЫ",
     "alliance_tag": "CLAV",
-    "alliance_name": "ВОЙНЫ-",
+    "alliance_name": "ВОЙНЫ",
     "server": "119",
     "points": 1549193
   },
@@ -1694,8 +1694,8 @@
   {
     "rank": 189,
     "commander": "Yarosl",
-    "alliance": "[cHIL] ChillEmpire",
-    "alliance_tag": "cHIL",
+    "alliance": "[CHIL] ChillEmpire",
+    "alliance_tag": "CHIL",
     "alliance_name": "ChillEmpire",
     "server": "119",
     "points": 1542400
@@ -1748,8 +1748,8 @@
   {
     "rank": 195,
     "commander": "иностранец",
-    "alliance": "[cHIL] ChillEmpire",
-    "alliance_tag": "cHIL",
+    "alliance": "[CHIL] ChillEmpire",
+    "alliance_tag": "CHIL",
     "alliance_name": "ChillEmpire",
     "server": "119",
     "points": 1533723
@@ -2009,9 +2009,9 @@
   {
     "rank": 224,
     "commander": "PartoS",
-    "alliance": "[RTRJ RETRO",
-    "alliance_tag": "",
-    "alliance_name": "[RTRJ RETRO",
+    "alliance": "[RTR] RETRO",
+    "alliance_tag": "RTR",
+    "alliance_name": "RETRO",
     "server": "119",
     "points": 1503900
   },
@@ -2351,9 +2351,9 @@
   {
     "rank": 262,
     "commander": "Brody138",
-    "alliance": "[P1MP] JU1CER",
+    "alliance": "[P1MP] JU1CE",
     "alliance_tag": "P1MP",
-    "alliance_name": "JU1CER",
+    "alliance_name": "JU1CE",
     "server": "117",
     "points": 1232280
   },
@@ -3098,9 +3098,9 @@
   {
     "rank": 345,
     "commander": "ПалачБоб",
-    "alliance": "[Hhhh] Xpovoç",
+    "alliance": "[Hhhh] Xpovos",
     "alliance_tag": "Hhhh",
-    "alliance_name": "Xpovoç",
+    "alliance_name": "Xpovos",
     "server": "119",
     "points": 842340
   },
@@ -3116,8 +3116,8 @@
   {
     "rank": 347,
     "commander": "АптечниК",
-    "alliance": "[cHIL] ChillEmpire",
-    "alliance_tag": "cHIL",
+    "alliance": "[CHIL] ChillEmpire",
+    "alliance_tag": "CHIL",
     "alliance_name": "ChillEmpire",
     "server": "119",
     "points": 837240
@@ -3305,8 +3305,8 @@
   {
     "rank": 368,
     "commander": "Термитиус",
-    "alliance": "[cHIL] ChillEmpire",
-    "alliance_tag": "cHIL",
+    "alliance": "[CHIL] ChillEmpire",
+    "alliance_tag": "CHIL",
     "alliance_name": "ChillEmpire",
     "server": "119",
     "points": 783406
@@ -3998,9 +3998,9 @@
   {
     "rank": 445,
     "commander": "Шмульке-",
-    "alliance": "[CLAVI ВОЙНЫ",
-    "alliance_tag": "",
-    "alliance_name": "[CLAVI ВОЙНЫ",
+    "alliance": "[CLAV] ВОЙНЫ",
+    "alliance_tag": "CLAV",
+    "alliance_name": "ВОЙНЫ",
     "server": "119",
     "points": 593616
   },
@@ -5447,9 +5447,9 @@
   {
     "rank": 606,
     "commander": "оптика",
-    "alliance": "TSKG] Horizon",
-    "alliance_tag": "",
-    "alliance_name": "TSKG] Horizon",
+    "alliance": "[SKG] Horizon",
+    "alliance_tag": "SKG",
+    "alliance_name": "Horizon",
     "server": "119",
     "points": 237488
   },
@@ -5825,9 +5825,9 @@
   {
     "rank": 648,
     "commander": "Сашок67",
-    "alliance": "[CLAV] ВОЙНЫ-",
+    "alliance": "[CLAV] ВОЙНЫ",
     "alliance_tag": "CLAV",
-    "alliance_name": "ВОЙНЫ-",
+    "alliance_name": "ВОЙНЫ",
     "server": "119",
     "points": 178020
   },
@@ -6554,9 +6554,9 @@
   {
     "rank": 729,
     "commander": "Vstyle",
-    "alliance": "[CLAV] ВОЙНЫ-",
+    "alliance": "[CLAV] ВОЙНЫ",
     "alliance_tag": "CLAV",
-    "alliance_name": "ВОЙНЫ-",
+    "alliance_name": "ВОЙНЫ",
     "server": "119",
     "points": 90828
   },
@@ -7067,9 +7067,9 @@
   {
     "rank": 786,
     "commander": "commanderveerla",
-    "alliance": "[7DS] Se7enDeàdlySinsR",
+    "alliance": "[7DS] Se7enDeàdlySins",
     "alliance_tag": "7DS",
-    "alliance_name": "Se7enDeàdlySinsR",
+    "alliance_name": "Se7enDeàdlySins",
     "server": "117",
     "points": 38000
   },
@@ -8138,9 +8138,9 @@
   {
     "rank": 905,
     "commander": "Wallace1999",
-    "alliance": "UQK]JOKKK",
-    "alliance_tag": "",
-    "alliance_name": "UQK]JOKKK",
+    "alliance": "[JQK] JQKKK",
+    "alliance_tag": "JQK",
+    "alliance_name": "JQKKK",
     "server": "117",
     "points": 1912
   },
@@ -8237,9 +8237,9 @@
   {
     "rank": 916,
     "commander": "RobsonSilva",
-    "alliance": "UJQK] JQKKK",
-    "alliance_tag": "",
-    "alliance_name": "UJQK] JQKKK",
+    "alliance": "[JQK] JQKKK",
+    "alliance_tag": "JQK",
+    "alliance_name": "JQKKK",
     "server": "117",
     "points": 1664
   },
@@ -8462,8 +8462,8 @@
   {
     "rank": 941,
     "commander": "MasteRS",
-    "alliance": "[TІOX] ПоХуисты",
-    "alliance_tag": "TІOX",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
     "alliance_name": "ПоХуисты",
     "server": "117",
     "points": 1184
@@ -9092,9 +9092,9 @@
   {
     "rank": 1011,
     "commander": "Commander2eMztKR",
-    "alliance": "Df] 아무이름이나붙이기",
-    "alliance_tag": "",
-    "alliance_name": "Df] 아무이름이나붙이기",
+    "alliance": "[Df] 아무이름이나붙이기",
+    "alliance_tag": "Df",
+    "alliance_name": "아무이름이나붙이기",
     "server": "117",
     "points": 585
   },
@@ -9245,9 +9245,9 @@
   {
     "rank": 1028,
     "commander": "Niella",
-    "alliance": "[QCKJ QUICKREACTIONFORCE",
-    "alliance_tag": "",
-    "alliance_name": "[QCKJ QUICKREACTIONFORCE",
+    "alliance": "[QCK] QUICKREACTIONFORCE",
+    "alliance_tag": "QCK",
+    "alliance_name": "QUICKREACTIONFORCE",
     "server": "117",
     "points": 483
   },
@@ -9362,8 +9362,8 @@
   {
     "rank": 1041,
     "commander": "slava111",
-    "alliance": "[TІOX] ПоХуисты",
-    "alliance_tag": "TІOX",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
     "alliance_name": "ПоХуисты",
     "server": "117",
     "points": 426
@@ -10154,9 +10154,9 @@
   {
     "rank": 1129,
     "commander": "아레흐",
-    "alliance": "Df] 아무이름이나붙이기",
-    "alliance_tag": "",
-    "alliance_name": "Df] 아무이름이나붙이기",
+    "alliance": "[Df] 아무이름이나붙이기",
+    "alliance_tag": "Df",
+    "alliance_name": "아무이름이나붙이기",
     "server": "117",
     "points": 189
   },
@@ -10262,8 +10262,8 @@
   {
     "rank": 1141,
     "commander": "ARLEQUIN",
-    "alliance": "[TІOX] ПоХуисты",
-    "alliance_tag": "TІOX",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
     "alliance_name": "ПоХуисты",
     "server": "117",
     "points": 174
@@ -10856,9 +10856,9 @@
   {
     "rank": 1207,
     "commander": "Gronkowski",
-    "alliance": "[QCKJ QUICKREACTIONFORCE",
-    "alliance_tag": "",
-    "alliance_name": "[QCKJ QUICKREACTIONFORCE",
+    "alliance": "[QCK] QUICKREACTIONFORCE",
+    "alliance_tag": "QCK",
+    "alliance_name": "QUICKREACTIONFORCE",
     "server": "117",
     "points": 96
   },
@@ -11225,8 +11225,8 @@
   {
     "rank": 1248,
     "commander": "logen",
-    "alliance": "[1BİR] XOXOX",
-    "alliance_tag": "1BİR",
+    "alliance": "[1BiR] XOXOX",
+    "alliance_tag": "1BiR",
     "alliance_name": "XOXOX",
     "server": "117",
     "points": 70
@@ -11261,8 +11261,8 @@
   {
     "rank": 1252,
     "commander": "Bellchen",
-    "alliance": "[19o] CandyClub",
-    "alliance_tag": "19o",
+    "alliance": "[190] CandyClub",
+    "alliance_tag": "190",
     "alliance_name": "CandyClub",
     "server": "117",
     "points": 64
@@ -11567,8 +11567,8 @@
   {
     "rank": 1286,
     "commander": "Commander2eyc9QV",
-    "alliance": "[1BİR] XOXOX",
-    "alliance_tag": "1BİR",
+    "alliance": "[1BiR] XOXOX",
+    "alliance_tag": "1BiR",
     "alliance_name": "XOXOX",
     "server": "117",
     "points": 45
@@ -11666,8 +11666,8 @@
   {
     "rank": 1297,
     "commander": "RusNr",
-    "alliance": "[TІOX] ПоХуисты",
-    "alliance_tag": "TІOX",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
     "alliance_name": "ПоХуисты",
     "server": "117",
     "points": 36
@@ -11756,8 +11756,8 @@
   {
     "rank": 1307,
     "commander": "Alexei-pervui",
-    "alliance": "[HElI] DarkAl",
-    "alliance_tag": "HElI",
+    "alliance": "[HEII] DarkAl",
+    "alliance_tag": "HEII",
     "alliance_name": "DarkAl",
     "server": "117",
     "points": 32
@@ -11819,8 +11819,8 @@
   {
     "rank": 1314,
     "commander": "Commander2dQFKVn",
-    "alliance": "[TІOX] ПоХуисты",
-    "alliance_tag": "TІOX",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
     "alliance_name": "ПоХуисты",
     "server": "117",
     "points": 27
@@ -12053,8 +12053,8 @@
   {
     "rank": 1340,
     "commander": "Commander2fCsQex",
-    "alliance": "[TІOX] ПоХуисты",
-    "alliance_tag": "TІOX",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
     "alliance_name": "ПоХуисты",
     "server": "117",
     "points": 18
@@ -12134,9 +12134,9 @@
   {
     "rank": 1349,
     "commander": "꺼드럭",
-    "alliance": "[FBLL] DVDVDVD",
-    "alliance_tag": "FBLL",
-    "alliance_name": "DVDVDVD",
+    "alliance": "[FBL3] DVDVDVDC",
+    "alliance_tag": "FBL3",
+    "alliance_name": "DVDVDVDC",
     "server": "117",
     "points": 16
   },

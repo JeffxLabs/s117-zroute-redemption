@@ -6,7 +6,7 @@ Rank,Commander,Alliance,Server,Points
 5,Diana215,[Sold] Soldiers,S119,6743009
 6,chauncey,[P1MP] JU1CE,S117,5891810
 7,RollingStoners,[P1MP] JU1CE,S117,5812714
-8,ViE,[P1MP] JU1CER,S117,5300951
+8,ViE,[P1MP] JU1CE,S117,5300951
 9,JimmyJam,[P1MP] JU1CE,S117,4358646
 10,Jeff,[P1MP] JU1CE,S117,4106808
 11,Tiffanie23,[Bigg] Бароны,S117,3671568
@@ -20,7 +20,7 @@ Rank,Commander,Alliance,Server,Points
 19,МальчикАмбальчик,[KRL] кристал,S119,2871030
 20,불휘이,[GDI] GolgDiggers,S117,2870825
 21,Queencard,[GDI] GolgDiggers,S117,2846159
-22,BoredAtWork,[P1MP] JU1CER,S117,2760105
+22,BoredAtWork,[P1MP] JU1CE,S117,2760105
 23,ZhekaSkillDoc,[Sold] Soldiers,S119,2731877
 24,SkiFcheGG,[GDI] GolgDiggers,S117,2720603
 25,ArT-G,[GDI] GolgDiggers,S117,2713240
@@ -66,7 +66,7 @@ Rank,Commander,Alliance,Server,Points
 65,kykas,[RTR] RETRO,S119,2013795
 66,Умница,[CHIL] ChillEmpire,S119,2010722
 67,владкмс,[Bigg] Бароны,S117,2005998
-68,Татали,[CLAV] ВОЙНЫ-,S119,1989235
+68,Татали,[CLAV] ВОЙНЫ,S119,1989235
 69,МаксКлим,[SORI] ВРЕДНЫЕ,S119,1981537
 70,ХесусХарисрама,[GDI] GolgDiggers,S117,1956682
 71,Сабии,[DOOM] Armageddon,S119,1954875
@@ -151,7 +151,7 @@ Rank,Commander,Alliance,Server,Points
 150,Tekinsoldier,[P1MP] JU1CE,S117,1598852
 151,pituh,[TSR2] TheShardofReality2,S119,1592908
 152,Knopo4ka,[RTR] RETRO,S119,1588761
-153,paNika,[CLAV] ВОЙНЫ-,S119,1587041
+153,paNika,[CLAV] ВОЙНЫ,S119,1587041
 154,RELAX1,[STLG] SteelLegion,S119,1585530
 155,Белка~,[DOOM] Armageddon,S119,1585460
 156,TENSEI,[TSR2] TheShardofReality2,S119,1584880
@@ -161,12 +161,12 @@ Rank,Commander,Alliance,Server,Points
 160,Popodelkin,[BNN] Banana,S119,1580497
 161,Konstantinos86,[P2MP] NowaPolandia,S117,1579978
 162,Нанит,[SORI] ВРЕДНЫЕ,S119,1578118
-163,[STLG] SteelLegion,No Alliance,S119,1578026
+163,Commander_163,[STLG] SteelLegion,S119,1578026
 164,Спартак89,[STLG] SteelLegion,S119,1577174
 165,Chop-Chop,[DOOM] Armageddon,S119,1573430
 166,Nomadic,[CLAV] ВОЙНЫ,S119,1571918
 167,Ладулька,[DOOM] Armageddon,S119,1568909
-168,[TSR2] TheShardofReality2,No Alliance,S119,1568347
+168,Commander_168,[TSR2] TheShardofReality2,S119,1568347
 169,Куськаа,[SKG] Horizon,S119,1568122
 170,SweTlayaY,[Sold] Soldiers,S119,1567773
 171,Олька38,[CHIL] ChillEmpire,S119,1566019
@@ -183,17 +183,17 @@ Rank,Commander,Alliance,Server,Points
 182,Asoka-909,[TSR2] TheShardofReality2,S119,1552465
 183,Yra187,[STLG] SteelLegion,S119,1551301
 184,Zaaaal,[RTR] RETRO,S119,1549704
-185,Rostov-Angeles,[CLAV] ВОЙНЫ-,S119,1549193
+185,Rostov-Angeles,[CLAV] ВОЙНЫ,S119,1549193
 186,Antonio1986,[OFF] OnlyForFans,S119,1548049
 187,DeaDShot,[STLG] SteelLegion,S119,1546504
 188,Philinx,[SORI] ВРЕДНЫЕ,S119,1543640
-189,Yarosl,[cHIL] ChillEmpire,S119,1542400
+189,Yarosl,[CHIL] ChillEmpire,S119,1542400
 190,Lucifer,[STLG] SteelLegion,S119,1540014
 191,zombibutcher1923,[SKG] Horizon,S119,1537585
 192,Sedykh,[TSR2] TheShardofReality2,S119,1536460
 193,NaDinka,[TSR2] TheShardofReality2,S119,1535902
 194,Серёгааа,[KRL] кристал,S119,1534940
-195,иностранец,[cHIL] ChillEmpire,S119,1533723
+195,иностранец,[CHIL] ChillEmpire,S119,1533723
 196,jf17,[AZT] AntiZombieTeam,S117,1532885
 197,Razy,[OFF] OnlyForFans,S119,1532716
 198,RamsesIl,[DOOM] Armageddon,S119,1532202
@@ -222,7 +222,7 @@ Rank,Commander,Alliance,Server,Points
 221,КапитанБаян,[STLG] SteelLegion,S119,1506437
 222,ВРЕДНАЯ,[SORI] ВРЕДНЫЕ,S119,1504952
 223,Артур006,[WIn] OnlyWin,S119,1504922
-224,PartoS,[RTRJ RETRO,S119,1503900
+224,PartoS,[RTR] RETRO,S119,1503900
 225,Leylik,[Sold] Soldiers,S119,1502977
 226,ARMAGEDdON,[DOOM] Armageddon,S119,1502834
 227,ViZzzz,[CHIL] ChillEmpire,S119,1502729
@@ -260,7 +260,7 @@ Rank,Commander,Alliance,Server,Points
 259,1STQ8,[P1MP] JU1CE,S117,1270859
 260,плутик,[BNN] Banana,S119,1268845
 261,сяусу,[HLCZ] HellsCrazy,S119,1246921
-262,Brody138,[P1MP] JU1CER,S117,1232280
+262,Brody138,[P1MP] JU1CE,S117,1232280
 263,Злая •Ведьма,[GDI] GolgDiggers,S117,1216723
 264,Karakhan,[Bigg] Бароны,S117,1212938
 265,Berzloi,[Bigg] Бароны,S117,1206883
@@ -343,9 +343,9 @@ Rank,Commander,Alliance,Server,Points
 342,BАРВАР,[CLAV] ВОЙНЫ,S119,850824
 343,Agam0017,[P1MP] JU1CE,S117,849981
 344,ДЖЖИ,[CHIL] ChillEmpire,S119,846582
-345,ПалачБоб,[Hhhh] Xpovoç,S119,842340
+345,ПалачБоб,[Hhhh] Xpovos,S119,842340
 346,tonyk152,[GDI] GolgDiggers,S117,837319
-347,АптечниК,[cHIL] ChillEmpire,S119,837240
+347,АптечниК,[CHIL] ChillEmpire,S119,837240
 348,지공이,[GDI] GolgDiggers,S117,836733
 349,L-first,[Bigg] Бароны,S117,835919
 350,GHOST,[TSR2] TheShardofReality2,S119,828498
@@ -366,7 +366,7 @@ Rank,Commander,Alliance,Server,Points
 365,ZombieKiller544,[AZT] AntiZombieTeam,S117,789700
 366,ZlayaFeya,[CHIL] ChillEmpire,S119,788074
 367,JamesSullivan,[OFF] OnlyForFans,S119,787157
-368,Термитиус,[cHIL] ChillEmpire,S119,783406
+368,Термитиус,[CHIL] ChillEmpire,S119,783406
 369,FairyDust,[STLG] SteelLegion,S119,782630
 370,DarkTime66,[P1MP] JU1CE,S117,781423
 371,OOBASTEToO,[WIn] OnlyWin,S119,780654
@@ -443,7 +443,7 @@ Rank,Commander,Alliance,Server,Points
 442,Rango46,[P2MP] NowaPolandia,S117,595269
 443,Derskay,[WIn] OnlyWin,S119,594823
 444,Rati,[DOOM] Armageddon,S119,594560
-445,Шмульке-,[CLAVI ВОЙНЫ,S119,593616
+445,Шмульке-,[CLAV] ВОЙНЫ,S119,593616
 446,Axuli,[HDG] HérosdeGuerre,S117,590176
 447,Skitz0,[P1MP] JU1CE,S117,584844
 448,WarDog00,[AZT] AntiZombieTeam,S117,584392
@@ -604,7 +604,7 @@ Rank,Commander,Alliance,Server,Points
 603,김아무개,[Gogo] 저랑고고하실분,S117,246536
 604,Aleks06,[0G8b] AbyssTerritory,S119,244600
 605,Zaxar161,[WIn] OnlyWin,S119,243229
-606,оптика,TSKG] Horizon,S119,237488
+606,оптика,[SKG] Horizon,S119,237488
 607,Lessotz99,[Ktq] TheGoats,S117,237383
 608,Dropbear007,[VBD] VBDRFABA,S117,237272
 609,ToneV,[AZT] AntiZombieTeam,S117,237080
@@ -646,7 +646,7 @@ Rank,Commander,Alliance,Server,Points
 645,BJG1684,[SHE] ShadowLover,S117,182221
 646,serg7777,[WIn] OnlyWin,S119,182123
 647,PlzGavinMyKenna,[P2MP] NowaPolandia,S117,181332
-648,Сашок67,[CLAV] ВОЙНЫ-,S119,178020
+648,Сашок67,[CLAV] ВОЙНЫ,S119,178020
 649,MoonWalkers,[AZT] AntiZombieTeam,S117,176720
 650,Khmel,[Hhhh] Xpovos,S119,175850
 651,Dogan-32,[KGLN] KillingLegion,S117,173940
@@ -727,7 +727,7 @@ Rank,Commander,Alliance,Server,Points
 726,Wolodia,[SMR] Самара163,S117,92587
 727,Kkkxx,[HDG] HérosdeGuerre,S117,92274
 728,Commander2eF1DaB,[Coe] Albertofg,S117,91882
-729,Vstyle,[CLAV] ВОЙНЫ-,S119,90828
+729,Vstyle,[CLAV] ВОЙНЫ,S119,90828
 730,miller08,[HDG] HérosdeGuerre,S117,90695
 731,Mat2ei,[CHIL] ChillEmpire,S119,85349
 732,Bigblock888,[LzB] LetzteBastion,S117,82327
@@ -784,7 +784,7 @@ Rank,Commander,Alliance,Server,Points
 783,Alligatorjack,[OBS] ZeroBullsht,S113,38474
 784,RedSectorA,[P2MP] NowaPolandia,S117,38302
 785,EzhikR,[GDI] GolgDiggers,S117,38000
-786,commanderveerla,[7DS] Se7enDeàdlySinsR,S117,38000
+786,commanderveerla,[7DS] Se7enDeàdlySins,S117,38000
 787,ivand,[SKG] Horizon,S119,37916
 788,DeadlyMonkey,[OBS] ZeroBullsht,S113,34680
 789,Sochinec,[BNN] Banana,S119,34000
@@ -903,7 +903,7 @@ Rank,Commander,Alliance,Server,Points
 902,ShooShoo,[NNU] TheSun,S117,1972
 903,Commander2ezanyZ,[2kk] afwff,S117,1946
 904,chentaren,[FRO] FrosDomain,S117,1944
-905,Wallace1999,UQK]JOKKK,S117,1912
+905,Wallace1999,[JQK] JQKKK,S117,1912
 906,Ramon87,[Azt2] USAKKAA,S117,1898
 907,Commander2fCTrIp,[VBD] VBDRFABA,S117,1822
 908,vivianmary,[GDI] GolgDiggers,S117,1795
@@ -914,7 +914,7 @@ Rank,Commander,Alliance,Server,Points
 913,Commander2fTVKXH,[FBL3] DVDVDVDC,S117,1692
 914,Commander2fXx401,[hel] helloo,S117,1680
 915,Fumyshe,[TopU] UkraineWillWin,S117,1680
-916,RobsonSilva,UJQK] JQKKK,S117,1664
+916,RobsonSilva,[JQK] JQKKK,S117,1664
 917,vintagemean,[VBD] VBDRFABA,S117,1632
 918,Commander2dy9WEB,[uakl] uukkl,S117,1593
 919,Commander2fDKTB3,[DSM] DarkStorm,S117,1576
@@ -939,7 +939,7 @@ Rank,Commander,Alliance,Server,Points
 938,Commander2e6Lqux,[3612] Легенда007,S117,1248
 939,killerkraken,[1Lr] resistencia,S117,1227
 940,Leech205,[AADC] Tranquilityprevails,S117,1184
-941,MasteRS,[TІOX] ПоХуисты,S117,1184
+941,MasteRS,[TIOX] ПоХуисты,S117,1184
 942,LukeSage,[CPU] CPUUUU,S117,1160
 943,chanito12,[1Lr] resistencia,S117,1152
 944,PiggysPops,[BCB] BADCOMPANYBRIGADE,S117,1120
@@ -1009,7 +1009,7 @@ Rank,Commander,Alliance,Server,Points
 1008,Commander2edulcZ,[TLC] ThalassaCoven,S117,612
 1009,Soven-M,[SHE] ShadowLover,S117,606
 1010,Commander2fGZuM5,[TIMI] ASDFG,S117,586
-1011,Commander2eMztKR,Df] 아무이름이나붙이기,S117,585
+1011,Commander2eMztKR,[Df] 아무이름이나붙이기,S117,585
 1012,Nicocrrz,[1Lr] resistencia,S117,584
 1013,Commander2eqSgv3,[TIMI] ASDFG,S117,576
 1014,TheWitcherCH,[LzB] LetzteBastion,S117,566
@@ -1026,7 +1026,7 @@ Rank,Commander,Alliance,Server,Points
 1025,AndRe,[GDI] GolgDiggers,S117,495
 1026,ASIFO1,[GDI] GolgDiggers,S117,488
 1027,Andrade1969,[BCB] BADCOMPANYBRIGADE,S117,488
-1028,Niella,[QCKJ QUICKREACTIONFORCE,S117,483
+1028,Niella,[QCK] QUICKREACTIONFORCE,S117,483
 1029,CRITTER,[KRS2] KRATO,S117,468
 1030,Misha2026,[Bigg] Бароны,S117,464
 1031,Gamley,[SMR] Самара163,S117,464
@@ -1039,7 +1039,7 @@ Rank,Commander,Alliance,Server,Points
 1038,RunDownjay,[LOD2] Legionofdoom,S117,441
 1039,ELCHO,[ERT] ERTTT,S117,440
 1040,CommanderAnya,[MMMC] Mdodmcj,S117,428
-1041,slava111,[TІOX] ПоХуисты,S117,426
+1041,slava111,[TIOX] ПоХуисты,S117,426
 1042,EtherealSaint,[COG] Archersoflacross,S117,424
 1043,Commander2fzp6uh,[D2D] DeadEndDynasty,S117,424
 1044,Meem,[COG] Archersoflacross,S117,416
@@ -1127,7 +1127,7 @@ Rank,Commander,Alliance,Server,Points
 1126,Commander2g2bWGp,[VFD] VFDAHREA,S117,192
 1127,Farao,[Cmds] Comandantes,S117,192
 1128,Otkir,[Bigg] Бароны,S117,189
-1129,아레흐,Df] 아무이름이나붙이기,S117,189
+1129,아레흐,[Df] 아무이름이나붙이기,S117,189
 1130,Commander2dlvgY5,[OSO] DFHJK,S117,189
 1131,Commander2dZjhFH,[TLC] ThalassaCoven,S117,189
 1132,Commander2f9EfIP,[Brav] Bravobr,S117,188
@@ -1139,7 +1139,7 @@ Rank,Commander,Alliance,Server,Points
 1138,галым,[HEII] DarkAl,S117,182
 1139,Thetokyo,[Tr1] TürkBirliğı,S117,175
 1140,Hgfnm,[Wir] WölfeOdins,S117,175
-1141,ARLEQUIN,[TІOX] ПоХуисты,S117,174
+1141,ARLEQUIN,[TIOX] ПоХуисты,S117,174
 1142,Commander2dPAq4B,[uakl] uukkl,S117,171
 1143,Commander2eBDgKV,[LOD2] Legionofdoom,S117,171
 1144,Commander2eVYRON,[2kk] afwff,S117,171
@@ -1205,7 +1205,7 @@ Rank,Commander,Alliance,Server,Points
 1204,melqui,[FBL3] DVDVDVDC,S117,102
 1205,Commander2e9hCgR,[TIMI] ASDFG,S117,99
 1206,Commander2dUNLsp,[UTS] upthescore,S117,99
-1207,Gronkowski,[QCKJ QUICKREACTIONFORCE,S117,96
+1207,Gronkowski,[QCK] QUICKREACTIONFORCE,S117,96
 1208,Carterer,[PYZE] PYZDA,S117,96
 1209,dominavita86,[CTA] centinelas,S117,96
 1210,Booyeah,[CK1] Crypt1cKnights,S117,96
@@ -1246,11 +1246,11 @@ Rank,Commander,Alliance,Server,Points
 1245,RbG,[LzB] LetzteBastion,S117,72
 1246,Commander2eidmvz,[CBD] CBDDD,S117,72
 1247,YUNUSOV,[TopU] UkraineWillWin,S117,70
-1248,logen,[1BİR] XOXOX,S117,70
+1248,logen,[1BiR] XOXOX,S117,70
 1249,Commander2fLwPWd,[MMMC] Mdodmcj,S117,67
 1250,abbi,[TWB] BMWMT,S117,64
 1251,reapah,[ROKY] NO1ROK,S117,64
-1252,Bellchen,[19o] CandyClub,S117,64
+1252,Bellchen,[190] CandyClub,S117,64
 1253,Commander2dEXdA1,[SMY] SileentMajority,S117,64
 1254,Llynchup26,[SMY] SileentMajority,S117,64
 1255,Commander2f3yupL,[LOD2] Legionofdoom,S117,64
@@ -1284,7 +1284,7 @@ Rank,Commander,Alliance,Server,Points
 1283,Commander2eVTjU1,[QhiX] TürklerGeliyor,S117,45
 1284,Commander2faHd9H,[XAT] EUROMONEY,S117,45
 1285,Commander2dMrsoJ,[TLC] ThalassaCoven,S117,45
-1286,Commander2eyc9QV,[1BİR] XOXOX,S117,45
+1286,Commander2eyc9QV,[1BiR] XOXOX,S117,45
 1287,Tokimus,[2kk] afwff,S117,42
 1288,Commander2eGFKHX,[Aria] ariaetsescompagon,S117,40
 1289,jimouss,[Aria] ariaetsescompagon,S117,40
@@ -1295,7 +1295,7 @@ Rank,Commander,Alliance,Server,Points
 1294,BonkersT,No Alliance,S117,36
 1295,Hameedhassani,[UTS] upthescore,S117,36
 1296,sayingbruv,No Alliance,S117,36
-1297,RusNr,[TІOX] ПоХуисты,S117,36
+1297,RusNr,[TIOX] ПоХуисты,S117,36
 1298,Commander2e0HD1P,[TLC] ThalassaCoven,S117,36
 1299,Commander2fR31aj,[1BiR] XOXOX,S117,36
 1300,Quinn247,[SHE] ShadowLover,S117,35
@@ -1305,14 +1305,14 @@ Rank,Commander,Alliance,Server,Points
 1304,Commander2ehCnqj,[hel] helloo,S117,32
 1305,Milobrlo,[TWB] BMWMT,S117,32
 1306,Commander2ew9uHr,No Alliance,S117,32
-1307,Alexei-pervui,[HElI] DarkAl,S117,32
+1307,Alexei-pervui,[HEII] DarkAl,S117,32
 1308,คาร์ลอส,[FGTH] FunnyGTH,S117,32
 1309,Commander2P6ImRD,[hel] helloo,S117,32
 1310,thedeadlyboy,[ovo] Fatebound,S117,27
 1311,vegasdpd,[ovo] Fatebound,S117,27
 1312,Commander2evKKix,[UOU] Пендосы,S117,27
 1313,Commander2ea4Hv7,[LOD2] Legionofdoom,S117,27
-1314,Commander2dQFKVn,[TІOX] ПоХуисты,S117,27
+1314,Commander2dQFKVn,[TIOX] ПоХуисты,S117,27
 1315,Commander2fJKihf,[piiu] yhyfjukus,S117,25
 1316,Commander2eyZIUZ,[COM] AmericanHeadquarter,S117,24
 1317,AlanWolf,[XAT] EUROMONEY,S117,24
@@ -1338,7 +1338,7 @@ Rank,Commander,Alliance,Server,Points
 1337,Imzii,No Alliance,S117,18
 1338,Sofiss~,[FBL3] DVDVDVDC,S117,18
 1339,Commander2frsMy9,[1Lr] resistencia,S117,18
-1340,Commander2fCsQex,[TІOX] ПоХуисты,S117,18
+1340,Commander2fCsQex,[TIOX] ПоХуисты,S117,18
 1341,Commander2fO2ZAp,[TLC] ThalassaCoven,S117,18
 1342,Commander2eHFAA5,[LOD2] Legionofdoom,S117,18
 1343,shadowmoon03,[uakl] uukkl,S117,18
@@ -1347,7 +1347,7 @@ Rank,Commander,Alliance,Server,Points
 1346,Commander2evOD77,[Brav] Bravobr,S117,16
 1347,CarlosCCG,[1Lr] resistencia,S117,16
 1348,Polipo,[LzB] LetzteBastion,S117,16
-1349,꺼드럭,[FBLL] DVDVDVD,S117,16
+1349,꺼드럭,[FBL3] DVDVDVDC,S117,16
 1350,Commander2eq70dD,[SMY] SileentMajority,S117,16
 1351,Commander2fbKs0B,[KDA] KDAUSA,S117,16
 1352,Razielazariel,[mvEp] Viva4ever,S117,16
