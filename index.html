@@ -488,7 +488,28 @@
     .rank-cell {
       font-family: var(--font-mono);
       font-weight: 700;
-      width: 4rem;
+      min-width: 5.2rem;
+    }
+
+    .dual-rank-cell {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .rank-primary {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .rank-secondary {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      font-weight: 500;
+      margin-top: 0.1rem;
     }
 
     .medal-1 { color: var(--gold); }
@@ -807,13 +828,13 @@
         <!-- S117 Top Alliances -->
         <div class="table-container">
           <div style="padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s117-cyan);">Top Server 117 Alliances</h4>
+            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s117-cyan);">Top 15 Server 117 Alliances</h4>
             <span class="server-pill pill-117">Home</span>
           </div>
           <table>
             <thead>
               <tr>
-                <th>#</th>
+                <th style="width: 5.2rem;">Rank</th>
                 <th>Alliance</th>
                 <th style="text-align: right;">Members</th>
                 <th style="text-align: right;">Total Points</th>
@@ -827,13 +848,13 @@
         <!-- S119 Top Alliances -->
         <div class="table-container">
           <div style="padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s119-rose);">Top Server 119 Alliances</h4>
+            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s119-rose);">Top 15 Server 119 Alliances</h4>
             <span class="server-pill pill-119">Visiting</span>
           </div>
           <table>
             <thead>
               <tr>
-                <th>#</th>
+                <th style="width: 5.2rem;">Rank</th>
                 <th>Alliance</th>
                 <th style="text-align: right;">Members</th>
                 <th style="text-align: right;">Total Points</th>
@@ -866,7 +887,7 @@
         <table>
           <thead>
             <tr>
-              <th data-sort="rank">Rank ⬍</th>
+              <th id="allianceRankHeader" style="min-width: 5.5rem;" data-sort="rank">Rank ⬍</th>
               <th data-sort="alliance">Alliance ⬍</th>
               <th data-sort="server">Server ⬍</th>
               <th data-sort="members" style="text-align: right;">Participants ⬍</th>
@@ -903,7 +924,7 @@
         <table>
           <thead>
             <tr>
-              <th style="width: 5rem;" data-psort="rank">Rank ⬍</th>
+              <th id="playerRankHeader" style="min-width: 5.5rem;" data-psort="rank">Rank ⬍</th>
               <th data-psort="commander">Commander ⬍</th>
               <th data-psort="alliance">Alliance ⬍</th>
               <th data-psort="server">Server ⬍</th>
@@ -988,7 +1009,7 @@
           <table>
             <thead>
               <tr>
-                <th>Rank</th>
+                <th style="width: 5.2rem;">Rank</th>
                 <th>Commander</th>
                 <th style="text-align: right;">Points</th>
                 <th style="text-align: right;">% Contrib</th>
@@ -1056,6 +1077,19 @@
     }
 
     function initDashboard() {
+      // Ensure server_rank is assigned for all alliances and rankings
+      const allyServerCounts = {};
+      eventData.alliances.forEach(a => {
+        allyServerCounts[a.server] = (allyServerCounts[a.server] || 0) + 1;
+        if (!a.server_rank) a.server_rank = allyServerCounts[a.server];
+      });
+
+      const playerServerCounts = {};
+      eventData.rankings.forEach(p => {
+        playerServerCounts[p.server] = (playerServerCounts[p.server] || 0) + 1;
+        if (!p.server_rank) p.server_rank = playerServerCounts[p.server];
+      });
+
       renderHeroAndKPIs();
       renderServerSpotlights();
       renderAlliancesTable();
@@ -1101,14 +1135,19 @@
     }
 
     function renderServerSpotlights() {
-      const s117Allies = eventData.alliances.filter(a => a.server === "117").slice(0, 10);
-      const s119Allies = eventData.alliances.filter(a => a.server === "119").slice(0, 10);
+      const s117Allies = eventData.alliances.filter(a => a.server === "117").slice(0, 15);
+      const s119Allies = eventData.alliances.filter(a => a.server === "119").slice(0, 15);
 
       const renderRows = (list, targetId) => {
         const body = document.getElementById(targetId);
         body.innerHTML = list.map((a, idx) => `
           <tr>
-            <td class="rank-cell ${idx === 0 ? 'medal-1' : idx === 1 ? 'medal-2' : idx === 2 ? 'medal-3' : ''}">#${idx + 1}</td>
+            <td class="rank-cell">
+              <div class="dual-rank-cell">
+                <span class="rank-primary ${idx === 0 ? 'medal-1' : idx === 1 ? 'medal-2' : idx === 2 ? 'medal-3' : ''}">#${idx + 1}</span>
+                <span class="rank-secondary">#${a.rank} ovr</span>
+              </div>
+            </td>
             <td style="font-weight: 600; cursor: pointer; color: var(--accent);" onclick="openAllianceModal('${escapeHtml(a.alliance)}')">${escapeHtml(a.alliance)}</td>
             <td style="text-align: right; font-family: var(--font-mono);">${a.members_count}</td>
             <td class="pts-cell">${formatNumber(a.total_points)}</td>
@@ -1123,9 +1162,16 @@
 
     function renderAlliancesTable() {
       const body = document.getElementById("allianceTableBody");
+      const rankTh = document.getElementById("allianceRankHeader");
+      const isFiltered = currentAllianceServer !== "all";
+
+      if (rankTh) {
+        rankTh.textContent = isFiltered ? `S${currentAllianceServer} Rank (Overall) ⬍` : "Rank ⬍";
+      }
+
       let list = eventData.alliances;
 
-      if (currentAllianceServer !== "all") {
+      if (isFiltered) {
         list = list.filter(a => a.server === currentAllianceServer);
       }
 
@@ -1134,9 +1180,24 @@
         list = list.filter(a => a.alliance.toLowerCase().includes(q) || a.tag.toLowerCase().includes(q));
       }
 
-      body.innerHTML = list.map(a => `
+      body.innerHTML = list.map(a => {
+        const sRank = a.server_rank || a.rank;
+        const rankDisplay = isFiltered ? `
+          <div class="dual-rank-cell">
+            <span class="rank-primary ${sRank === 1 ? 'medal-1' : sRank === 2 ? 'medal-2' : sRank === 3 ? 'medal-3' : ''}">
+              #${sRank}
+            </span>
+            <span class="rank-secondary">#${a.rank} overall</span>
+          </div>
+        ` : `
+          <span class="rank-primary ${a.rank === 1 ? 'medal-1' : a.rank === 2 ? 'medal-2' : a.rank === 3 ? 'medal-3' : ''}">
+            #${a.rank}
+          </span>
+        `;
+
+        return `
         <tr>
-          <td class="rank-cell ${a.rank === 1 ? 'medal-1' : a.rank === 2 ? 'medal-2' : a.rank === 3 ? 'medal-3' : ''}">#${a.rank}</td>
+          <td class="rank-cell">${rankDisplay}</td>
           <td style="font-weight: 600; cursor: pointer; color: #fff;" onclick="openAllianceModal('${escapeHtml(a.alliance)}')">
             ${escapeHtml(a.alliance)}
           </td>
@@ -1156,7 +1217,7 @@
             <button class="filter-btn" style="padding: 0.2rem 0.6rem; font-size: 0.75rem;" onclick="openAllianceModal('${escapeHtml(a.alliance)}')">View Roster</button>
           </td>
         </tr>
-      `).join("");
+      `;}).join("");
     }
 
     function getFilteredPlayers() {
@@ -1177,16 +1238,36 @@
     function renderPlayersTable(resetPage = false) {
       if (resetPage) playerPage = 1;
       const body = document.getElementById("playerTableBody");
+      const pRankTh = document.getElementById("playerRankHeader");
+      const isFiltered = currentPlayerServer !== "all";
+
+      if (pRankTh) {
+        pRankTh.textContent = isFiltered ? `S${currentPlayerServer} Rank (Overall) ⬍` : "Rank ⬍";
+      }
+
       const filtered = getFilteredPlayers();
       document.getElementById("filteredPlayerCount").textContent = formatNumber(filtered.length);
 
       const itemsToShow = filtered.slice(0, playerPage * PLAYERS_PER_PAGE);
 
-      body.innerHTML = itemsToShow.map(p => `
+      body.innerHTML = itemsToShow.map(p => {
+        const sRank = p.server_rank || p.rank;
+        const rankDisplay = isFiltered ? `
+          <div class="dual-rank-cell">
+            <span class="rank-primary ${sRank === 1 ? 'medal-1' : sRank === 2 ? 'medal-2' : sRank === 3 ? 'medal-3' : ''}">
+              ${sRank === 1 ? '🥇 1' : sRank === 2 ? '🥈 2' : sRank === 3 ? '🥉 3' : '#' + sRank}
+            </span>
+            <span class="rank-secondary">#${p.rank} overall</span>
+          </div>
+        ` : `
+          <span class="rank-primary ${p.rank === 1 ? 'medal-1' : p.rank === 2 ? 'medal-2' : p.rank === 3 ? 'medal-3' : ''}">
+            ${p.rank === 1 ? '🥇 1' : p.rank === 2 ? '🥈 2' : p.rank === 3 ? '🥉 3' : '#' + p.rank}
+          </span>
+        `;
+
+        return `
         <tr class="deferred-row">
-          <td class="rank-cell ${p.rank === 1 ? 'medal-1' : p.rank === 2 ? 'medal-2' : p.rank === 3 ? 'medal-3' : ''}">
-            ${p.rank === 1 ? '🥇 1' : p.rank === 2 ? '🥈 2' : p.rank === 3 ? '🥉 3' : p.rank}
-          </td>
+          <td class="rank-cell">${rankDisplay}</td>
           <td class="cmd-name">${escapeHtml(p.commander)}</td>
           <td style="color: var(--text-muted); cursor: pointer;" onclick="openAllianceModal('${escapeHtml(p.alliance)}')">${escapeHtml(p.alliance || 'None')}</td>
           <td>
@@ -1196,7 +1277,7 @@
           </td>
           <td class="pts-cell">${formatNumber(p.points)}</td>
         </tr>
-      `).join("");
+      `;}).join("");
 
       const loadMoreBtn = document.getElementById("loadMoreBtn");
       if (itemsToShow.length >= filtered.length) {
@@ -1218,11 +1299,16 @@
       document.getElementById("modalAvgPts").textContent = formatNumber(ally.avg_points);
 
       const rosterBody = document.getElementById("modalRosterBody");
-      rosterBody.innerHTML = ally.members.map(m => {
+      rosterBody.innerHTML = ally.members.map((m, idx) => {
         const pct = ally.total_points > 0 ? ((m.points / ally.total_points) * 100).toFixed(1) : 0;
         return `
           <tr>
-            <td class="rank-cell">#${m.rank}</td>
+            <td class="rank-cell">
+              <div class="dual-rank-cell">
+                <span class="rank-primary ${idx === 0 ? 'medal-1' : idx === 1 ? 'medal-2' : idx === 2 ? 'medal-3' : ''}">#${idx + 1}</span>
+                <span class="rank-secondary">#${m.rank} ovr</span>
+              </div>
+            </td>
             <td class="cmd-name">${escapeHtml(m.commander)}</td>
             <td class="pts-cell">${formatNumber(m.points)}</td>
             <td style="text-align: right; font-family: var(--font-mono); color: var(--text-dim);">${pct}%</td>

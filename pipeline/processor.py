@@ -73,6 +73,18 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
     for idx, a in enumerate(alliances, 1):
         a["rank"] = idx
 
+    # Compute server_rank for alliances (1-indexed within each server)
+    server_ally_counts = defaultdict(int)
+    for a in alliances:
+        server_ally_counts[a["server"]] += 1
+        a["server_rank"] = server_ally_counts[a["server"]]
+
+    # Compute server_rank for players (1-indexed within each server)
+    server_player_counts = defaultdict(int)
+    for p in players:
+        server_player_counts[p["server"]] += 1
+        p["server_rank"] = server_player_counts[p["server"]]
+
     event_meta = {
         "id": event_id,
         "title": title,
@@ -106,15 +118,15 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
 
     with open(os.path.join(event_dir, "rankings.csv"), "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["Rank", "Commander", "Alliance", "Server", "Points"])
+        writer.writerow(["Rank", "Server_Rank", "Commander", "Alliance", "Server", "Points"])
         for p in players:
-            writer.writerow([p["rank"], p["commander"], p["alliance"], f"S{p['server']}", p["points"]])
+            writer.writerow([p["rank"], p["server_rank"], p["commander"], p["alliance"], f"S{p['server']}", p["points"]])
 
     with open(os.path.join(event_dir, "alliances.csv"), "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["Rank", "Alliance", "Server", "Members", "Total Points", "Avg Points/Player", "Top Commander", "Top Commander Points"])
+        writer.writerow(["Rank", "Server_Rank", "Alliance", "Server", "Members", "Total Points", "Avg Points/Player", "Top Commander", "Top Commander Points"])
         for a in alliances:
-            writer.writerow([a["rank"], a["alliance"], f"S{a['server']}", a["members_count"], a["total_points"], a["avg_points"], a["top_commander"], a["top_points"]])
+            writer.writerow([a["rank"], a["server_rank"], a["alliance"], f"S{a['server']}", a["members_count"], a["total_points"], a["avg_points"], a["top_commander"], a["top_points"]])
 
     js_var = f"EVENT_{event_id.replace('-', '_')}"
     with open(os.path.join(event_dir, "event_data.js"), "w", encoding="utf-8") as f:
@@ -131,14 +143,14 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
         json.dump(players, f, indent=2, ensure_ascii=False)
     with open(os.path.join(data_dir, "capitol_event_rankings.csv"), "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["Rank", "Commander", "Alliance", "Server", "Points"])
+        writer.writerow(["Rank", "Server_Rank", "Commander", "Alliance", "Server", "Points"])
         for p in players:
-            writer.writerow([p["rank"], p["commander"], p["alliance"], f"S{p['server']}", p["points"]])
+            writer.writerow([p["rank"], p["server_rank"], p["commander"], p["alliance"], f"S{p['server']}", p["points"]])
     with open(os.path.join(data_dir, "alliance_summary.csv"), "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["Rank", "Alliance", "Server", "Members", "Total Points", "Avg Points/Player", "Top Commander", "Top Commander Points"])
+        writer.writerow(["Rank", "Server_Rank", "Alliance", "Server", "Members", "Total Points", "Avg Points/Player", "Top Commander", "Top Commander Points"])
         for a in alliances:
-            writer.writerow([a["rank"], a["alliance"], f"S{a['server']}", a["members_count"], a["total_points"], a["avg_points"], a["top_commander"], a["top_points"]])
+            writer.writerow([a["rank"], a["server_rank"], a["alliance"], f"S{a['server']}", a["members_count"], a["total_points"], a["avg_points"], a["top_commander"], a["top_points"]])
 
     # Update Manifest
     manifest_path = os.path.join(BASE_DIR, "events", "manifest.json")

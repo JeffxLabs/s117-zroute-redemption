@@ -312,7 +312,8 @@
         "server": "117"
       }
     ],
-    "rank": 1
+    "rank": 1,
+    "server_rank": 1
   },
   {
     "alliance": "[DOOM] Armageddon",
@@ -675,7 +676,8 @@
         "server": "119"
       }
     ],
-    "rank": 2
+    "rank": 2,
+    "server_rank": 1
   },
   {
     "alliance": "[STLG] SteelLegion",
@@ -942,7 +944,8 @@
         "server": "119"
       }
     ],
-    "rank": 3
+    "rank": 3,
+    "server_rank": 2
   },
   {
     "alliance": "[CHIL] ChillEmpire",
@@ -1263,7 +1266,8 @@
         "server": "119"
       }
     ],
-    "rank": 4
+    "rank": 4,
+    "server_rank": 3
   },
   {
     "alliance": "[TSR2] TheShardofReality2",
@@ -1512,7 +1516,8 @@
         "server": "119"
       }
     ],
-    "rank": 5
+    "rank": 5,
+    "server_rank": 4
   },
   {
     "alliance": "[GDI] GolgDiggers",
@@ -1815,7 +1820,8 @@
         "server": "117"
       }
     ],
-    "rank": 6
+    "rank": 6,
+    "server_rank": 2
   },
   {
     "alliance": "[Bigg] Бароны",
@@ -2058,7 +2064,8 @@
         "server": "117"
       }
     ],
-    "rank": 7
+    "rank": 7,
+    "server_rank": 3
   },
   {
     "alliance": "[OFF] OnlyForFans",
@@ -2313,7 +2320,8 @@
         "server": "119"
       }
     ],
-    "rank": 8
+    "rank": 8,
+    "server_rank": 5
   },
   {
     "alliance": "[HDG] HérosdeGuerre",
@@ -2550,7 +2558,8 @@
         "server": "117"
       }
     ],
-    "rank": 9
+    "rank": 9,
+    "server_rank": 4
   },
   {
     "alliance": "[Sold] Soldiers",
@@ -2727,7 +2736,8 @@
         "server": "119"
       }
     ],
-    "rank": 10
+    "rank": 10,
+    "server_rank": 6
   },
   {
     "alliance": "[SKG] Horizon",
@@ -2970,7 +2980,8 @@
         "server": "119"
       }
     ],
-    "rank": 11
+    "rank": 11,
+    "server_rank": 7
   },
   {
     "alliance": "[WIn] OnlyWin",
@@ -3237,7 +3248,8 @@
         "server": "119"
       }
     ],
-    "rank": 12
+    "rank": 12,
+    "server_rank": 8
   },
   {
     "alliance": "[RTR] RETRO",
@@ -3408,7 +3420,8 @@
         "server": "119"
       }
     ],
-    "rank": 13
+    "rank": 13,
+    "server_rank": 9
   },
   {
     "alliance": "[SORI] ВРЕДНЫЕ",
@@ -3555,7 +3568,8 @@
         "server": "119"
       }
     ],
-    "rank": 14
+    "rank": 14,
+    "server_rank": 10
   },
   {
     "alliance": "[CLAV] ВОЙНЫ",
@@ -3702,7 +3716,8 @@
         "server": "119"
       }
     ],
-    "rank": 15
+    "rank": 15,
+    "server_rank": 11
   },
   {
     "alliance": "[P2MP] NowaPolandia",
@@ -3927,7 +3942,8 @@
         "server": "117"
       }
     ],
-    "rank": 16
+    "rank": 16,
+    "server_rank": 5
   },
   {
     "alliance": "[AZT] AntiZombieTeam",
@@ -4176,7 +4192,8 @@
         "server": "117"
       }
     ],
-    "rank": 17
+    "rank": 17,
+    "server_rank": 6
   },
   {
     "alliance": "[Hhhh] Xpovos",
@@ -4263,7 +4280,8 @@
         "server": "119"
       }
     ],
-    "rank": 18
+    "rank": 18,
+    "server_rank": 12
   },
   {
     "alliance": "[KRL] кристал",
@@ -4338,7 +4356,8 @@
         "server": "119"
       }
     ],
-    "rank": 19
+    "rank": 19,
+    "server_rank": 13
   },
   {
     "alliance": "[ARF2] БесячаяГвардия",
@@ -4473,7 +4492,8 @@
         "server": "119"
       }
     ],
-    "rank": 20
+    "rank": 20,
+    "server_rank": 14
   },
   {
     "alliance": "[KRS] KRATOS",
@@ -4614,7 +4634,8 @@
         "server": "117"
       }
     ],
-    "rank": 21
+    "rank": 21,
+    "server_rank": 7
   },
   {
     "alliance": "[0G8b] AbyssTerritory",
@@ -4677,7 +4698,8 @@
         "server": "119"
       }
     ],
-    "rank": 22
+    "rank": 22,
+    "server_rank": 15
   },
   {
     "alliance": "[BNN] Banana",
@@ -4728,7 +4750,8 @@
         "server": "119"
       }
     ],
-    "rank": 23
+    "rank": 23,
+    "server_rank": 16
   },
   {
     "alliance": "[ALIN] RUSalina",
@@ -4821,7 +4844,8 @@
         "server": "117"
       }
     ],
-    "rank": 24
+    "rank": 24,
+    "server_rank": 8
   },
   {
     "alliance": "[OUTS] OUTSIDERS",
@@ -4890,7 +4914,8 @@
         "server": "117"
       }
     ],
-    "rank": 25
+    "rank": 25,
+    "server_rank": 9
   },
   {
     "alliance": "[SSSE] Pensioners",
@@ -4989,7 +5014,8 @@
         "server": "119"
       }
     ],
-    "rank": 26
+    "rank": 26,
+    "server_rank": 17
   },
   {
     "alliance": "[HLCZ] HellsCrazy",
@@ -5022,7 +5048,8 @@
         "server": "119"
       }
     ],
-    "rank": 27
+    "rank": 27,
+    "server_rank": 18
   },
   {
     "alliance": "[G95] Grozny",
@@ -5055,7 +5082,8 @@
         "server": "119"
       }
     ],
-    "rank": 28
+    "rank": 28,
+    "server_rank": 19
   },
   {
     "alliance": "[OBS] ZeroBullsht",
@@ -5178,7 +5206,8 @@
         "server": "113"
       }
     ],
-    "rank": 29
+    "rank": 29,
+    "server_rank": 1
   },
   {
     "alliance": "[UAW] UpadteAnioły",
@@ -5199,7 +5228,8 @@
         "server": "119"
       }
     ],
-    "rank": 30
+    "rank": 30,
+    "server_rank": 20
   },
   {
     "alliance": "[1Lr] resistencia",
@@ -5346,7 +5376,8 @@
         "server": "117"
       }
     ],
-    "rank": 31
+    "rank": 31,
+    "server_rank": 10
   },
   {
     "alliance": "[IVIN] Invincibililtaliani",
@@ -5367,7 +5398,8 @@
         "server": "119"
       }
     ],
-    "rank": 32
+    "rank": 32,
+    "server_rank": 21
   },
   {
     "alliance": "[SpSS] AusSpass",
@@ -5442,7 +5474,8 @@
         "server": "117"
       }
     ],
-    "rank": 33
+    "rank": 33,
+    "server_rank": 11
   },
   {
     "alliance": "[SHE] ShadowLover",
@@ -5577,7 +5610,8 @@
         "server": "117"
       }
     ],
-    "rank": 34
+    "rank": 34,
+    "server_rank": 12
   },
   {
     "alliance": "[TIOX] ПоХуисты",
@@ -5694,7 +5728,8 @@
         "server": "117"
       }
     ],
-    "rank": 35
+    "rank": 35,
+    "server_rank": 13
   },
   {
     "alliance": "[Hard] Revolt",
@@ -5727,7 +5762,8 @@
         "server": "117"
       }
     ],
-    "rank": 36
+    "rank": 36,
+    "server_rank": 14
   },
   {
     "alliance": "[DGe] DieGestrandeten",
@@ -5790,7 +5826,8 @@
         "server": "117"
       }
     ],
-    "rank": 37
+    "rank": 37,
+    "server_rank": 15
   },
   {
     "alliance": "[Dick] КаолицияДалбаебизма",
@@ -5817,7 +5854,8 @@
         "server": "119"
       }
     ],
-    "rank": 38
+    "rank": 38,
+    "server_rank": 22
   },
   {
     "alliance": "[UTS] upthescore",
@@ -5886,7 +5924,8 @@
         "server": "117"
       }
     ],
-    "rank": 39
+    "rank": 39,
+    "server_rank": 16
   },
   {
     "alliance": "[GZS] GermanZombieSquad",
@@ -5985,7 +6024,8 @@
         "server": "117"
       }
     ],
-    "rank": 40
+    "rank": 40,
+    "server_rank": 17
   },
   {
     "alliance": "[KGH] KNGTH",
@@ -6042,7 +6082,8 @@
         "server": "117"
       }
     ],
-    "rank": 41
+    "rank": 41,
+    "server_rank": 18
   },
   {
     "alliance": "[VBD] VBDRFABA",
@@ -6153,7 +6194,8 @@
         "server": "117"
       }
     ],
-    "rank": 42
+    "rank": 42,
+    "server_rank": 19
   },
   {
     "alliance": "[1919] Blackout",
@@ -6174,7 +6216,8 @@
         "server": "119"
       }
     ],
-    "rank": 43
+    "rank": 43,
+    "server_rank": 23
   },
   {
     "alliance": "[415] Воркута",
@@ -6195,7 +6238,8 @@
         "server": "119"
       }
     ],
-    "rank": 44
+    "rank": 44,
+    "server_rank": 24
   },
   {
     "alliance": "[139] супердержава",
@@ -6216,7 +6260,8 @@
         "server": "119"
       }
     ],
-    "rank": 45
+    "rank": 45,
+    "server_rank": 25
   },
   {
     "alliance": "[Bas] BASIS",
@@ -6243,7 +6288,8 @@
         "server": "119"
       }
     ],
-    "rank": 46
+    "rank": 46,
+    "server_rank": 26
   },
   {
     "alliance": "[715] team715",
@@ -6300,7 +6346,8 @@
         "server": "117"
       }
     ],
-    "rank": 47
+    "rank": 47,
+    "server_rank": 20
   },
   {
     "alliance": "[TLC] ThalassaCoven",
@@ -6381,7 +6428,8 @@
         "server": "117"
       }
     ],
-    "rank": 48
+    "rank": 48,
+    "server_rank": 21
   },
   {
     "alliance": "[xDX] IronSovereigon",
@@ -6402,7 +6450,8 @@
         "server": "119"
       }
     ],
-    "rank": 49
+    "rank": 49,
+    "server_rank": 27
   },
   {
     "alliance": "[QMA] QUEMIRABOBO",
@@ -6423,7 +6472,8 @@
         "server": "117"
       }
     ],
-    "rank": 50
+    "rank": 50,
+    "server_rank": 22
   },
   {
     "alliance": "[FRO] FrosDomain",
@@ -6474,7 +6524,8 @@
         "server": "117"
       }
     ],
-    "rank": 51
+    "rank": 51,
+    "server_rank": 23
   },
   {
     "alliance": "[LOD2] Legionofdoom",
@@ -6573,7 +6624,8 @@
         "server": "117"
       }
     ],
-    "rank": 52
+    "rank": 52,
+    "server_rank": 24
   },
   {
     "alliance": "[QhiX] TürklerGeliyor",
@@ -6600,7 +6652,8 @@
         "server": "117"
       }
     ],
-    "rank": 53
+    "rank": 53,
+    "server_rank": 25
   },
   {
     "alliance": "[Gogo] 저랑고고하실분",
@@ -6621,7 +6674,8 @@
         "server": "117"
       }
     ],
-    "rank": 54
+    "rank": 54,
+    "server_rank": 26
   },
   {
     "alliance": "[AmG] Аксель",
@@ -6648,7 +6702,8 @@
         "server": "119"
       }
     ],
-    "rank": 55
+    "rank": 55,
+    "server_rank": 28
   },
   {
     "alliance": "[Ktq] TheGoats",
@@ -6705,7 +6760,8 @@
         "server": "117"
       }
     ],
-    "rank": 56
+    "rank": 56,
+    "server_rank": 27
   },
   {
     "alliance": "[SMR] Самара163",
@@ -6792,7 +6848,8 @@
         "server": "117"
       }
     ],
-    "rank": 57
+    "rank": 57,
+    "server_rank": 28
   },
   {
     "alliance": "[KGLN] KillingLegion",
@@ -6861,7 +6918,8 @@
         "server": "117"
       }
     ],
-    "rank": 58
+    "rank": 58,
+    "server_rank": 29
   },
   {
     "alliance": "[LzB] LetzteBastion",
@@ -6972,7 +7030,8 @@
         "server": "117"
       }
     ],
-    "rank": 59
+    "rank": 59,
+    "server_rank": 30
   },
   {
     "alliance": "[uakl] uukkl",
@@ -7077,7 +7136,8 @@
         "server": "117"
       }
     ],
-    "rank": 60
+    "rank": 60,
+    "server_rank": 31
   },
   {
     "alliance": "[RD2] RD2RUST",
@@ -7098,7 +7158,8 @@
         "server": "119"
       }
     ],
-    "rank": 61
+    "rank": 61,
+    "server_rank": 29
   },
   {
     "alliance": "[Kila] micrib",
@@ -7119,7 +7180,8 @@
         "server": "117"
       }
     ],
-    "rank": 62
+    "rank": 62,
+    "server_rank": 32
   },
   {
     "alliance": "[HPRN] ГИПЕРИОН",
@@ -7140,7 +7202,8 @@
         "server": "119"
       }
     ],
-    "rank": 63
+    "rank": 63,
+    "server_rank": 30
   },
   {
     "alliance": "[UOU] Пендосы",
@@ -7167,7 +7230,8 @@
         "server": "117"
       }
     ],
-    "rank": 64
+    "rank": 64,
+    "server_rank": 33
   },
   {
     "alliance": "[XAT] EUROMONEY",
@@ -7224,7 +7288,8 @@
         "server": "117"
       }
     ],
-    "rank": 65
+    "rank": 65,
+    "server_rank": 34
   },
   {
     "alliance": "[Rog] РогаиКопыта007",
@@ -7245,7 +7310,8 @@
         "server": "119"
       }
     ],
-    "rank": 66
+    "rank": 66,
+    "server_rank": 31
   },
   {
     "alliance": "[piiu] yhyfjukus",
@@ -7302,7 +7368,8 @@
         "server": "117"
       }
     ],
-    "rank": 67
+    "rank": 67,
+    "server_rank": 35
   },
   {
     "alliance": "[ovo] Fatebound",
@@ -7359,7 +7426,8 @@
         "server": "117"
       }
     ],
-    "rank": 68
+    "rank": 68,
+    "server_rank": 36
   },
   {
     "alliance": "[WZTX] KingThe",
@@ -7404,7 +7472,8 @@
         "server": "117"
       }
     ],
-    "rank": 69
+    "rank": 69,
+    "server_rank": 37
   },
   {
     "alliance": "[Coe] Albertofg",
@@ -7431,7 +7500,8 @@
         "server": "117"
       }
     ],
-    "rank": 70
+    "rank": 70,
+    "server_rank": 38
   },
   {
     "alliance": "[TIMI] ASDFG",
@@ -7530,7 +7600,8 @@
         "server": "117"
       }
     ],
-    "rank": 71
+    "rank": 71,
+    "server_rank": 39
   },
   {
     "alliance": "[CTA] centinelas",
@@ -7575,7 +7646,8 @@
         "server": "117"
       }
     ],
-    "rank": 72
+    "rank": 72,
+    "server_rank": 40
   },
   {
     "alliance": "[ERT] ERTTT",
@@ -7650,7 +7722,8 @@
         "server": "117"
       }
     ],
-    "rank": 73
+    "rank": 73,
+    "server_rank": 41
   },
   {
     "alliance": "[7DS] Se7enDeàdlySins",
@@ -7731,7 +7804,8 @@
         "server": "117"
       }
     ],
-    "rank": 74
+    "rank": 74,
+    "server_rank": 42
   },
   {
     "alliance": "[DSM] DarkStorm",
@@ -7806,7 +7880,8 @@
         "server": "117"
       }
     ],
-    "rank": 75
+    "rank": 75,
+    "server_rank": 43
   },
   {
     "alliance": "[Cmds] Comandantes",
@@ -7893,7 +7968,8 @@
         "server": "117"
       }
     ],
-    "rank": 76
+    "rank": 76,
+    "server_rank": 44
   },
   {
     "alliance": "[FBL3] DVDVDVDC",
@@ -7950,7 +8026,8 @@
         "server": "117"
       }
     ],
-    "rank": 77
+    "rank": 77,
+    "server_rank": 45
   },
   {
     "alliance": "[Brav] Bravobr",
@@ -7995,7 +8072,8 @@
         "server": "117"
       }
     ],
-    "rank": 78
+    "rank": 78,
+    "server_rank": 46
   },
   {
     "alliance": "[pART] PartizanGrobari",
@@ -8016,7 +8094,8 @@
         "server": "117"
       }
     ],
-    "rank": 79
+    "rank": 79,
+    "server_rank": 47
   },
   {
     "alliance": "[WoLF] WorldLiberationFront",
@@ -8037,7 +8116,8 @@
         "server": "117"
       }
     ],
-    "rank": 80
+    "rank": 80,
+    "server_rank": 48
   },
   {
     "alliance": "[BCB] BADCOMPANYBRIGADE",
@@ -8112,7 +8192,8 @@
         "server": "117"
       }
     ],
-    "rank": 81
+    "rank": 81,
+    "server_rank": 49
   },
   {
     "alliance": "No Alliance",
@@ -8343,7 +8424,8 @@
         "server": "117"
       }
     ],
-    "rank": 82
+    "rank": 82,
+    "server_rank": 50
   },
   {
     "alliance": "[Azt2] USAKKAA",
@@ -8406,7 +8488,8 @@
         "server": "117"
       }
     ],
-    "rank": 83
+    "rank": 83,
+    "server_rank": 51
   },
   {
     "alliance": "[CK1] Crypt1cKnights",
@@ -8439,7 +8522,8 @@
         "server": "117"
       }
     ],
-    "rank": 84
+    "rank": 84,
+    "server_rank": 52
   },
   {
     "alliance": "[Tr1] TürkBirliğı",
@@ -8508,7 +8592,8 @@
         "server": "117"
       }
     ],
-    "rank": 85
+    "rank": 85,
+    "server_rank": 53
   },
   {
     "alliance": "[D2D] DeadEndDynasty",
@@ -8571,7 +8656,8 @@
         "server": "117"
       }
     ],
-    "rank": 86
+    "rank": 86,
+    "server_rank": 54
   },
   {
     "alliance": "[AADC] Tranquilityprevails",
@@ -8646,7 +8732,8 @@
         "server": "117"
       }
     ],
-    "rank": 87
+    "rank": 87,
+    "server_rank": 55
   },
   {
     "alliance": "[3612] Легенда007",
@@ -8709,7 +8796,8 @@
         "server": "117"
       }
     ],
-    "rank": 88
+    "rank": 88,
+    "server_rank": 56
   },
   {
     "alliance": "[KRS2] KRATO",
@@ -8766,7 +8854,8 @@
         "server": "117"
       }
     ],
-    "rank": 89
+    "rank": 89,
+    "server_rank": 57
   },
   {
     "alliance": "[CPU] CPUUUU",
@@ -8811,7 +8900,8 @@
         "server": "117"
       }
     ],
-    "rank": 90
+    "rank": 90,
+    "server_rank": 58
   },
   {
     "alliance": "[hel] helloo",
@@ -8886,7 +8976,8 @@
         "server": "117"
       }
     ],
-    "rank": 91
+    "rank": 91,
+    "server_rank": 59
   },
   {
     "alliance": "[TBMM] Teşkilat",
@@ -8907,7 +8998,8 @@
         "server": "117"
       }
     ],
-    "rank": 92
+    "rank": 92,
+    "server_rank": 60
   },
   {
     "alliance": "[JQK] JQKKK",
@@ -8934,7 +9026,8 @@
         "server": "117"
       }
     ],
-    "rank": 93
+    "rank": 93,
+    "server_rank": 61
   },
   {
     "alliance": "[FGTH] FunnyGTH",
@@ -8997,7 +9090,8 @@
         "server": "117"
       }
     ],
-    "rank": 94
+    "rank": 94,
+    "server_rank": 62
   },
   {
     "alliance": "[QCK] QUICKREACTIONFORCE",
@@ -9042,7 +9136,8 @@
         "server": "117"
       }
     ],
-    "rank": 95
+    "rank": 95,
+    "server_rank": 63
   },
   {
     "alliance": "[SMY] SileentMajority",
@@ -9129,7 +9224,8 @@
         "server": "117"
       }
     ],
-    "rank": 96
+    "rank": 96,
+    "server_rank": 64
   },
   {
     "alliance": "[RD11] RisingDominion",
@@ -9150,7 +9246,8 @@
         "server": "117"
       }
     ],
-    "rank": 97
+    "rank": 97,
+    "server_rank": 65
   },
   {
     "alliance": "[TopU] UkraineWillWin",
@@ -9207,7 +9304,8 @@
         "server": "117"
       }
     ],
-    "rank": 98
+    "rank": 98,
+    "server_rank": 66
   },
   {
     "alliance": "[R111] R11111",
@@ -9228,7 +9326,8 @@
         "server": "117"
       }
     ],
-    "rank": 99
+    "rank": 99,
+    "server_rank": 67
   },
   {
     "alliance": "[GeR] Germanyf2P",
@@ -9249,7 +9348,8 @@
         "server": "113"
       }
     ],
-    "rank": 100
+    "rank": 100,
+    "server_rank": 2
   },
   {
     "alliance": "[mvEp] Viva4ever",
@@ -9306,7 +9406,8 @@
         "server": "117"
       }
     ],
-    "rank": 101
+    "rank": 101,
+    "server_rank": 68
   },
   {
     "alliance": "[2kk] afwff",
@@ -9351,7 +9452,8 @@
         "server": "117"
       }
     ],
-    "rank": 102
+    "rank": 102,
+    "server_rank": 69
   },
   {
     "alliance": "[TBS2] Tabacuddos",
@@ -9384,7 +9486,8 @@
         "server": "117"
       }
     ],
-    "rank": 103
+    "rank": 103,
+    "server_rank": 70
   },
   {
     "alliance": "[NNU] TheSun",
@@ -9405,7 +9508,8 @@
         "server": "117"
       }
     ],
-    "rank": 104
+    "rank": 104,
+    "server_rank": 71
   },
   {
     "alliance": "[HEII] DarkAl",
@@ -9450,7 +9554,8 @@
         "server": "117"
       }
     ],
-    "rank": 105
+    "rank": 105,
+    "server_rank": 72
   },
   {
     "alliance": "[Sp3r] Sparta2026",
@@ -9501,7 +9606,8 @@
         "server": "117"
       }
     ],
-    "rank": 106
+    "rank": 106,
+    "server_rank": 73
   },
   {
     "alliance": "[VFD] VFDAHREA",
@@ -9540,7 +9646,8 @@
         "server": "117"
       }
     ],
-    "rank": 107
+    "rank": 107,
+    "server_rank": 74
   },
   {
     "alliance": "[1BiR] XOXOX",
@@ -9591,7 +9698,8 @@
         "server": "117"
       }
     ],
-    "rank": 108
+    "rank": 108,
+    "server_rank": 75
   },
   {
     "alliance": "[COG] Archersoflacross",
@@ -9636,7 +9744,8 @@
         "server": "117"
       }
     ],
-    "rank": 109
+    "rank": 109,
+    "server_rank": 76
   },
   {
     "alliance": "[aWLO] 111AB",
@@ -9663,7 +9772,8 @@
         "server": "117"
       }
     ],
-    "rank": 110
+    "rank": 110,
+    "server_rank": 77
   },
   {
     "alliance": "[HMK] HispaniaMagna",
@@ -9684,7 +9794,8 @@
         "server": "117"
       }
     ],
-    "rank": 111
+    "rank": 111,
+    "server_rank": 78
   },
   {
     "alliance": "[MMMC] Mdodmcj",
@@ -9735,7 +9846,8 @@
         "server": "117"
       }
     ],
-    "rank": 112
+    "rank": 112,
+    "server_rank": 79
   },
   {
     "alliance": "[DRKT] DarkKnightS",
@@ -9762,7 +9874,8 @@
         "server": "117"
       }
     ],
-    "rank": 113
+    "rank": 113,
+    "server_rank": 80
   },
   {
     "alliance": "[Wir] WölfeOdins",
@@ -9789,7 +9902,8 @@
         "server": "117"
       }
     ],
-    "rank": 114
+    "rank": 114,
+    "server_rank": 81
   },
   {
     "alliance": "[Df] 아무이름이나붙이기",
@@ -9816,7 +9930,8 @@
         "server": "117"
       }
     ],
-    "rank": 115
+    "rank": 115,
+    "server_rank": 82
   },
   {
     "alliance": "[ZRS] ZRlastwar",
@@ -9837,7 +9952,8 @@
         "server": "117"
       }
     ],
-    "rank": 116
+    "rank": 116,
+    "server_rank": 83
   },
   {
     "alliance": "[190] CandyClub",
@@ -9876,7 +9992,8 @@
         "server": "117"
       }
     ],
-    "rank": 117
+    "rank": 117,
+    "server_rank": 84
   },
   {
     "alliance": "[Aria] ariaetsescompagon",
@@ -9933,7 +10050,8 @@
         "server": "117"
       }
     ],
-    "rank": 118
+    "rank": 118,
+    "server_rank": 85
   },
   {
     "alliance": "[SEE] SunEatingEagle",
@@ -9960,7 +10078,8 @@
         "server": "117"
       }
     ],
-    "rank": 119
+    "rank": 119,
+    "server_rank": 86
   },
   {
     "alliance": "[PYZE] PYZDA",
@@ -9993,7 +10112,8 @@
         "server": "117"
       }
     ],
-    "rank": 120
+    "rank": 120,
+    "server_rank": 87
   },
   {
     "alliance": "[DWD] DryWell",
@@ -10014,7 +10134,8 @@
         "server": "117"
       }
     ],
-    "rank": 121
+    "rank": 121,
+    "server_rank": 88
   },
   {
     "alliance": "[TWB] BMWMT",
@@ -10059,7 +10180,8 @@
         "server": "117"
       }
     ],
-    "rank": 122
+    "rank": 122,
+    "server_rank": 89
   },
   {
     "alliance": "[ues] SUAUUUUUUK",
@@ -10086,7 +10208,8 @@
         "server": "117"
       }
     ],
-    "rank": 123
+    "rank": 123,
+    "server_rank": 90
   },
   {
     "alliance": "[uuas] usssss",
@@ -10113,7 +10236,8 @@
         "server": "117"
       }
     ],
-    "rank": 124
+    "rank": 124,
+    "server_rank": 91
   },
   {
     "alliance": "[COM] AmericanHeadquarter",
@@ -10146,7 +10270,8 @@
         "server": "117"
       }
     ],
-    "rank": 125
+    "rank": 125,
+    "server_rank": 92
   },
   {
     "alliance": "[BYQ] USASKK",
@@ -10167,7 +10292,8 @@
         "server": "117"
       }
     ],
-    "rank": 126
+    "rank": 126,
+    "server_rank": 93
   },
   {
     "alliance": "[SiN1] Genocide",
@@ -10188,7 +10314,8 @@
         "server": "117"
       }
     ],
-    "rank": 127
+    "rank": 127,
+    "server_rank": 94
   },
   {
     "alliance": "[A12] AmericanFamily",
@@ -10215,7 +10342,8 @@
         "server": "117"
       }
     ],
-    "rank": 128
+    "rank": 128,
+    "server_rank": 95
   },
   {
     "alliance": "[usv] USAUUUUUUUUKU",
@@ -10236,7 +10364,8 @@
         "server": "117"
       }
     ],
-    "rank": 129
+    "rank": 129,
+    "server_rank": 96
   },
   {
     "alliance": "[OSO] DFHJK",
@@ -10257,7 +10386,8 @@
         "server": "117"
       }
     ],
-    "rank": 130
+    "rank": 130,
+    "server_rank": 97
   },
   {
     "alliance": "[RESH] Gshreh",
@@ -10278,7 +10408,8 @@
         "server": "117"
       }
     ],
-    "rank": 131
+    "rank": 131,
+    "server_rank": 98
   },
   {
     "alliance": "[CBD] CBDDD",
@@ -10305,7 +10436,8 @@
         "server": "117"
       }
     ],
-    "rank": 132
+    "rank": 132,
+    "server_rank": 99
   },
   {
     "alliance": "[MXZ] Mexzom",
@@ -10326,7 +10458,8 @@
         "server": "117"
       }
     ],
-    "rank": 133
+    "rank": 133,
+    "server_rank": 100
   },
   {
     "alliance": "[Skr] southkorea",
@@ -10347,7 +10480,8 @@
         "server": "117"
       }
     ],
-    "rank": 134
+    "rank": 134,
+    "server_rank": 101
   },
   {
     "alliance": "[ROKY] NO1ROK",
@@ -10368,7 +10502,8 @@
         "server": "117"
       }
     ],
-    "rank": 135
+    "rank": 135,
+    "server_rank": 102
   },
   {
     "alliance": "[KDA] KDAUSA",
@@ -10395,7 +10530,8 @@
         "server": "117"
       }
     ],
-    "rank": 136
+    "rank": 136,
+    "server_rank": 103
   },
   {
     "alliance": "[wCOE] USAQUK",
@@ -10416,7 +10552,8 @@
         "server": "117"
       }
     ],
-    "rank": 137
+    "rank": 137,
+    "server_rank": 104
   },
   {
     "alliance": "[DFH] LregLSho",
@@ -10443,7 +10580,8 @@
         "server": "117"
       }
     ],
-    "rank": 138
+    "rank": 138,
+    "server_rank": 105
   },
   {
     "alliance": "[QWER] 가나디유치원",
@@ -10464,7 +10602,8 @@
         "server": "117"
       }
     ],
-    "rank": 139
+    "rank": 139,
+    "server_rank": 106
   },
   {
     "alliance": "[Fkfk] Фкфкфкфк",
@@ -10485,6 +10624,7 @@
         "server": "117"
       }
     ],
-    "rank": 140
+    "rank": 140,
+    "server_rank": 107
   }
 ]
