@@ -11,8 +11,9 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <!-- Offline/Local Fallback Scripts -->
-  <script src="events/manifest.js?v=20260919b"></script>
-  <script src="events/2026-09-19-s117-vs-s119/event_data.js?v=20260919b"></script>
+  <script src="events/i18n.js?v=20260919c"></script>
+  <script src="events/manifest.js?v=20260919c"></script>
+  <script src="events/2026-09-19-s117-vs-s119/event_data.js?v=20260919c"></script>
   <style>
     :root {
       --bg-dark: #070a12;
@@ -113,27 +114,37 @@
       letter-spacing: 0.05em;
     }
 
-    .event-selector-wrap {
+    .header-controls {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.75rem;
+      flex-wrap: wrap;
     }
 
-    .event-select {
+    .event-selector-wrap,
+    .lang-selector-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .event-select,
+    .lang-select {
       background: var(--bg-card);
       border: 1px solid var(--border-light);
       color: var(--text-main);
-      padding: 0.45rem 0.9rem;
+      padding: 0.45rem 0.75rem;
       border-radius: 0.375rem;
       font-family: var(--font-body);
-      font-size: 0.875rem;
+      font-size: 0.85rem;
       font-weight: 500;
       cursor: pointer;
       outline: none;
       transition: border-color 0.2s;
     }
 
-    .event-select:focus {
+    .event-select:focus,
+    .lang-select:focus {
       border-color: var(--accent);
     }
 
@@ -491,14 +502,14 @@
     .rank-cell {
       font-family: var(--font-mono);
       font-weight: 700;
-      min-width: 5.2rem;
+      white-space: nowrap;
+      min-width: 4.8rem;
     }
 
     .dual-rank-cell {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.2;
-      white-space: nowrap;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.25rem;
     }
 
     .rank-primary {
@@ -509,10 +520,9 @@
 
     .rank-secondary {
       font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-size: 0.8rem;
       color: var(--text-dim);
       font-weight: 500;
-      margin-top: 0.1rem;
     }
 
     .medal-1 { color: var(--gold); }
@@ -687,15 +697,32 @@
       <div class="brand">
         <div class="badge-radar">ZR</div>
         <div>
-          <div class="brand-title">Z Route: Redemption — S117 Intel</div>
-          <div class="brand-subtitle">Capitol War & Cross-Server Event Analytics</div>
+          <div class="brand-title" data-i18n="brand_title">Z Route: Redemption — S117 Intel</div>
+          <div class="brand-subtitle" data-i18n="brand_subtitle">Capitol War & Cross-Server Event Analytics</div>
         </div>
       </div>
-      <div class="event-selector-wrap">
-        <label for="eventSelect" style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 600;">Event:</label>
-        <select id="eventSelect" class="event-select">
-          <option value="2026-09-19-s117-vs-s119">2026-09-19: Capitol War (S117 vs S119)</option>
-        </select>
+      <div class="header-controls">
+        <div class="event-selector-wrap">
+          <label for="eventSelect" style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 600;" data-i18n="event_label">Event:</label>
+          <select id="eventSelect" class="event-select">
+            <option value="2026-09-19-s117-vs-s119">2026-09-19: Capitol War (S117 vs S119)</option>
+          </select>
+        </div>
+        <div class="lang-selector-wrap">
+          <select id="langSelect" class="lang-select" aria-label="Language">
+            <option value="en">🇬🇧 English</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="ru">🇷🇺 Русский</option>
+            <option value="tr">🇹🇷 Türkçe</option>
+            <option value="pl">🇵🇱 Polski</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="ko">🇰🇷 한국어</option>
+            <option value="ja">🇯🇵 日本語</option>
+            <option value="zh">🇨🇳 简体中文</option>
+          </select>
+        </div>
       </div>
     </div>
   </header>
@@ -706,33 +733,33 @@
       <div class="hero-header">
         <div>
           <h1 class="hero-title" id="eventTitle">Capitol War: Server 117 vs Server 119</h1>
-          <p class="hero-desc" id="eventDesc">Full event rankings, alliance participation, and server-vs-server battlefield performance.</p>
+          <p class="hero-desc" id="eventDesc" data-i18n="hero_desc">Full event rankings, alliance participation, and server-vs-server battlefield performance.</p>
         </div>
         <div class="hero-tags">
-          <span class="tag-badge tag-home">🛡️ S117 (Home Server)</span>
-          <span class="tag-badge tag-visiting">⚔️ S119 (Visiting)</span>
+          <span class="tag-badge tag-home" id="tagHome" data-i18n="tag_home">🛡️ S117 (Home Server)</span>
+          <span class="tag-badge tag-visiting" id="tagVisiting" data-i18n="tag_visiting">⚔️ S119 (Visiting)</span>
         </div>
       </div>
 
       <!-- KPI Summary Cards -->
       <div class="kpi-grid">
         <div class="kpi-card">
-          <div class="kpi-label">Total War Points</div>
+          <div class="kpi-label" data-i18n="kpi_total_points">Total War Points</div>
           <div class="kpi-val" id="totalPointsVal">773,073,925</div>
-          <div class="kpi-sub">Across all battle participants</div>
+          <div class="kpi-sub" data-i18n="kpi_total_points_sub">Across all battle participants</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-label">Total Commanders</div>
+          <div class="kpi-label" data-i18n="kpi_total_commanders">Total Commanders</div>
           <div class="kpi-val" id="totalPlayersVal">1,398</div>
-          <div class="kpi-sub">100% extracted leaderboard</div>
+          <div class="kpi-sub" data-i18n="kpi_total_commanders_sub">100% extracted leaderboard</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-label">Alliances Deployed</div>
+          <div class="kpi-label" data-i18n="kpi_alliances_deployed">Alliances Deployed</div>
           <div class="kpi-val" id="totalAlliancesVal">156</div>
-          <div class="kpi-sub">S117, S119 & Cross-Server</div>
+          <div class="kpi-sub" data-i18n="kpi_alliances_deployed_sub">S117, S119 & Cross-Server</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-label">#1 Top Contributor</div>
+          <div class="kpi-label" data-i18n="kpi_top_contributor">#1 Top Contributor</div>
           <div class="kpi-val" id="topCommanderVal" style="color: var(--gold); font-size: 1.35rem;">TheRequiem</div>
           <div class="kpi-sub">[P1MP] JU1CE (16.65M pts)</div>
         </div>
@@ -742,7 +769,7 @@
       <div class="war-meter-card">
         <div class="war-meter-header">
           <span style="color: #fb7185;">⚔️ Server 119: <span id="s119PtsHeader">500.2M (64.7%)</span></span>
-          <span style="color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase;">Points Dominance</span>
+          <span id="pointsDominanceLabel" style="color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase;" data-i18n="points_dominance">Points Dominance</span>
           <span style="color: #22d3ee;">🛡️ Server 117: <span id="s117PtsHeader">270.6M (35.0%)</span></span>
         </div>
         <div class="bar-container">
@@ -755,10 +782,10 @@
 
     <!-- Navigation Tabs -->
     <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="tab-overview">Overview & Server Breakdown</button>
-      <button class="tab-btn" data-tab="tab-alliances">Alliance Leaderboard</button>
-      <button class="tab-btn" data-tab="tab-players">Commander Rankings (1,398)</button>
-      <button class="tab-btn" data-tab="tab-export">Data & Methodology</button>
+      <button class="tab-btn active" data-tab="tab-overview" data-i18n="tab_overview">Overview & Server Breakdown</button>
+      <button class="tab-btn" data-tab="tab-alliances" data-i18n="tab_alliances">Alliance Leaderboard</button>
+      <button class="tab-btn" data-tab="tab-players" data-i18n="tab_players">Commander Rankings</button>
+      <button class="tab-btn" data-tab="tab-export" data-i18n="tab_export">Data & Methodology</button>
     </div>
 
     <!-- TAB 1: OVERVIEW & SERVER BREAKDOWN -->
@@ -768,28 +795,28 @@
         <!-- S117 Home Server Card -->
         <div class="kpi-card" style="border-left: 4px solid var(--s117-cyan);">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-            <h3 style="color: var(--s117-cyan); font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;">Server 117 (Home)</h3>
+            <h3 id="s117ServerTitle" style="color: var(--s117-cyan); font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;" data-i18n="server_117_title">Server 117 (Home)</h3>
             <span class="server-pill pill-117">S117</span>
           </div>
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.75rem;">
             <div>
-              <div class="kpi-label">Total Points</div>
+              <div class="kpi-label" data-i18n="card_total_points">Total Points</div>
               <div class="kpi-val" style="font-size: 1.25rem;" id="s117TotalPts">270,561,864</div>
-              <div class="kpi-sub">35.0% War Share</div>
+              <div class="kpi-sub"><span id="s117SharePct">35.0%</span> <span data-i18n="war_share">War Share</span></div>
             </div>
             <div>
-              <div class="kpi-label">Participants</div>
+              <div class="kpi-label" data-i18n="card_participants">Participants</div>
               <div class="kpi-val" style="font-size: 1.25rem;" id="s117Players">881</div>
-              <div class="kpi-sub">63.0% of total roster</div>
+              <div class="kpi-sub"><span id="s117RosterPct">63.0%</span> <span data-i18n="of_roster">of total roster</span></div>
             </div>
             <div>
-              <div class="kpi-label">Avg Pts / Player</div>
+              <div class="kpi-label" data-i18n="card_avg_pts">Avg Pts / Player</div>
               <div class="kpi-val" style="font-size: 1.25rem;" id="s117AvgPts">307,108</div>
             </div>
             <div>
-              <div class="kpi-label">Top Alliance</div>
+              <div class="kpi-label" data-i18n="card_top_alliance">Top Alliance</div>
               <div class="kpi-val" style="font-size: 1.1rem; color: var(--gold);">[P1MP] JU1CE</div>
-              <div class="kpi-sub">87.17M Points (#1 avg/player)</div>
+              <div class="kpi-sub">96.46M Points</div>
             </div>
           </div>
         </div>
@@ -797,28 +824,28 @@
         <!-- S119 Visiting Server Card -->
         <div class="kpi-card" style="border-left: 4px solid var(--s119-rose);">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-            <h3 style="color: var(--s119-rose); font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;">Server 119 (Visiting)</h3>
+            <h3 id="s119ServerTitle" style="color: var(--s119-rose); font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;" data-i18n="server_119_title">Server 119 (Visiting)</h3>
             <span class="server-pill pill-119">S119</span>
           </div>
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.75rem;">
             <div>
-              <div class="kpi-label">Total Points</div>
+              <div class="kpi-label" data-i18n="card_total_points">Total Points</div>
               <div class="kpi-val" style="font-size: 1.25rem;" id="s119TotalPts">500,233,739</div>
-              <div class="kpi-sub">64.7% War Share</div>
+              <div class="kpi-sub"><span id="s119SharePct">64.7%</span> <span data-i18n="war_share">War Share</span></div>
             </div>
             <div>
-              <div class="kpi-label">Participants</div>
+              <div class="kpi-label" data-i18n="card_participants">Participants</div>
               <div class="kpi-val" style="font-size: 1.25rem;" id="s119Players">498</div>
-              <div class="kpi-sub">35.6% of total roster</div>
+              <div class="kpi-sub"><span id="s119RosterPct">35.6%</span> <span data-i18n="of_roster">of total roster</span></div>
             </div>
             <div>
-              <div class="kpi-label">Avg Pts / Player</div>
+              <div class="kpi-label" data-i18n="card_avg_pts">Avg Pts / Player</div>
               <div class="kpi-val" style="font-size: 1.25rem;" id="s119AvgPts">1,004,485</div>
             </div>
             <div>
-              <div class="kpi-label">Top Alliance</div>
+              <div class="kpi-label" data-i18n="card_top_alliance">Top Alliance</div>
               <div class="kpi-val" style="font-size: 1.1rem; color: var(--gold);">[DOOM] Armageddon</div>
-              <div class="kpi-sub">90.72M Points (#1 total pts)</div>
+              <div class="kpi-sub">90.72M Points</div>
             </div>
           </div>
         </div>
@@ -831,17 +858,17 @@
         <!-- S117 Top Alliances -->
         <div class="table-container">
           <div style="padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s117-cyan);">Top 15 Server 117 Alliances</h4>
-            <span class="server-pill pill-117">Home</span>
+            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s117-cyan);" data-i18n="top15_s117">Top 15 Server 117 Alliances</h4>
+            <span class="server-pill pill-117" data-i18n="home_label">Home</span>
           </div>
           <table>
             <thead>
               <tr>
-                <th style="width: 5.2rem;">Rank</th>
-                <th>Alliance</th>
-                <th style="text-align: right;">Members</th>
-                <th style="text-align: right;">Total Points</th>
-                <th style="text-align: right;">Avg / Player</th>
+                <th style="width: 5.2rem;" data-i18n="col_rank">Rank</th>
+                <th data-i18n="col_alliance">Alliance</th>
+                <th style="text-align: right;" data-i18n="col_members">Members</th>
+                <th style="text-align: right;" data-i18n="col_total_points">Total Points</th>
+                <th style="text-align: right;" data-i18n="col_avg_player">Avg / Player</th>
               </tr>
             </thead>
             <tbody id="s117TopAlliesBody"></tbody>
@@ -851,17 +878,17 @@
         <!-- S119 Top Alliances -->
         <div class="table-container">
           <div style="padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s119-rose);">Top 15 Server 119 Alliances</h4>
-            <span class="server-pill pill-119">Visiting</span>
+            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s119-rose);" data-i18n="top15_s119">Top 15 Server 119 Alliances</h4>
+            <span class="server-pill pill-119" data-i18n="visiting_label">Visiting</span>
           </div>
           <table>
             <thead>
               <tr>
-                <th style="width: 5.2rem;">Rank</th>
-                <th>Alliance</th>
-                <th style="text-align: right;">Members</th>
-                <th style="text-align: right;">Total Points</th>
-                <th style="text-align: right;">Avg / Player</th>
+                <th style="width: 5.2rem;" data-i18n="col_rank">Rank</th>
+                <th data-i18n="col_alliance">Alliance</th>
+                <th style="text-align: right;" data-i18n="col_members">Members</th>
+                <th style="text-align: right;" data-i18n="col_total_points">Total Points</th>
+                <th style="text-align: right;" data-i18n="col_avg_player">Avg / Player</th>
               </tr>
             </thead>
             <tbody id="s119TopAlliesBody"></tbody>
@@ -875,29 +902,29 @@
     <section id="tab-alliances" class="tab-content" style="display: none;">
       <div class="toolbar">
         <div class="search-box">
-          <input type="text" id="allianceSearch" class="search-input" placeholder="Search alliance name or tag...">
+          <input type="text" id="allianceSearch" class="search-input" placeholder="Search alliance name or tag..." data-i18n-ph="search_alliance_ph">
         </div>
         <div class="filter-group">
-          <button class="filter-btn active" data-server="all">All Servers</button>
+          <button class="filter-btn active" data-server="all" data-i18n="filter_all_servers">All Servers</button>
           <button class="filter-btn" data-server="117">Server 117</button>
           <button class="filter-btn" data-server="119">Server 119</button>
           <button class="filter-btn" data-server="113">Server 113</button>
         </div>
-        <a href="data/alliance_summary.csv" download class="btn-download">📥 Download CSV</a>
+        <a href="data/alliance_summary.csv" download class="btn-download" data-i18n="download_csv">📥 Download CSV</a>
       </div>
 
       <div class="table-container">
         <table>
           <thead>
             <tr>
-              <th id="allianceRankHeader" style="min-width: 5.5rem;" data-sort="rank">Rank ⬍</th>
-              <th data-sort="alliance">Alliance ⬍</th>
-              <th data-sort="server">Server ⬍</th>
-              <th data-sort="members" style="text-align: right;">Participants ⬍</th>
-              <th data-sort="points" style="text-align: right;">Total Points ⬍</th>
-              <th data-sort="avg" style="text-align: right;">Avg / Player ⬍</th>
-              <th>Top Commander</th>
-              <th style="text-align: center;">Action</th>
+              <th id="allianceRankHeader" style="min-width: 5.5rem;" data-sort="rank" data-i18n="col_rank">Rank ⬍</th>
+              <th data-sort="alliance" data-i18n="col_alliance">Alliance ⬍</th>
+              <th data-sort="server" data-i18n="col_server">Server ⬍</th>
+              <th data-sort="members" style="text-align: right;" data-i18n="card_participants">Participants ⬍</th>
+              <th data-sort="points" style="text-align: right;" data-i18n="col_total_points">Total Points ⬍</th>
+              <th data-sort="avg" style="text-align: right;" data-i18n="col_avg_player">Avg / Player ⬍</th>
+              <th data-i18n="col_top_commander">Top Commander</th>
+              <th style="text-align: center;" data-i18n="col_action">Action</th>
             </tr>
           </thead>
           <tbody id="allianceTableBody"></tbody>
@@ -909,36 +936,36 @@
     <section id="tab-players" class="tab-content" style="display: none;">
       <div class="toolbar">
         <div class="search-box">
-          <input type="text" id="playerSearch" class="search-input" placeholder="Search player name or alliance...">
+          <input type="text" id="playerSearch" class="search-input" placeholder="Search player name or alliance..." data-i18n-ph="search_player_ph">
         </div>
         <div class="filter-group">
-          <button class="filter-btn player-srv-filter active" data-player-srv="all">All Servers</button>
+          <button class="filter-btn player-srv-filter active" data-player-srv="all" data-i18n="filter_all_servers">All Servers</button>
           <button class="filter-btn player-srv-filter" data-player-srv="117">Server 117</button>
           <button class="filter-btn player-srv-filter" data-player-srv="119">Server 119</button>
           <button class="filter-btn player-srv-filter" data-player-srv="113">Server 113</button>
         </div>
         <div style="font-size: 0.85rem; color: var(--text-muted);">
-          Showing <span id="filteredPlayerCount" style="color: #fff; font-weight: 700;">1,398</span> commanders
+          <span data-i18n="showing_text">Showing</span> <span id="filteredPlayerCount" style="color: #fff; font-weight: 700;">1,398</span> <span data-i18n="commanders_word">commanders</span>
         </div>
-        <a href="data/capitol_event_rankings.csv" download class="btn-download">📥 Download CSV</a>
+        <a href="data/capitol_event_rankings.csv" download class="btn-download" data-i18n="download_csv">📥 Download CSV</a>
       </div>
 
       <div class="table-container">
         <table>
           <thead>
             <tr>
-              <th id="playerRankHeader" style="min-width: 5.5rem;" data-psort="rank">Rank ⬍</th>
-              <th data-psort="commander">Commander ⬍</th>
-              <th data-psort="alliance">Alliance ⬍</th>
-              <th data-psort="server">Server ⬍</th>
-              <th style="text-align: right;" data-psort="points">Points ⬍</th>
+              <th id="playerRankHeader" style="min-width: 5.5rem;" data-psort="rank" data-i18n="col_rank">Rank ⬍</th>
+              <th data-psort="commander" data-i18n="col_commander">Commander ⬍</th>
+              <th data-psort="alliance" data-i18n="col_alliance">Alliance ⬍</th>
+              <th data-psort="server" data-i18n="col_server">Server ⬍</th>
+              <th style="text-align: right;" data-psort="points" data-i18n="col_points">Points ⬍</th>
             </tr>
           </thead>
           <tbody id="playerTableBody"></tbody>
         </table>
       </div>
       <div id="loadMoreContainer" style="text-align: center; padding: 1rem;">
-        <button id="loadMoreBtn" class="filter-btn" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Load More Commanders</button>
+        <button id="loadMoreBtn" class="filter-btn" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;" data-i18n="load_more_btn">Load More Commanders</button>
       </div>
     </section>
 
@@ -947,35 +974,35 @@
       <div class="kpi-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-bottom: 2rem;">
         
         <div class="kpi-card">
-          <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent);">📊 Complete CSV Roster</h4>
-          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;">Spreadsheet containing all 1,398 commanders with ranks, names, alliances, and point scores.</p>
+          <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent);" data-i18n="exp_csv_title">📊 Complete CSV Roster</h4>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="exp_csv_desc">Spreadsheet containing all 1,398 commanders with ranks, names, alliances, and point scores.</p>
           <a href="data/capitol_event_rankings.csv" download class="btn-download">Download rankings.csv</a>
         </div>
 
         <div class="kpi-card">
-          <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--gold);">📦 Structured JSON Dataset</h4>
-          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;">Machine-readable JSON dataset for analytical pipelines, solvers, and simulation models.</p>
+          <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--gold);" data-i18n="exp_json_title">📦 Structured JSON Dataset</h4>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="exp_json_desc">Machine-readable JSON dataset for analytical pipelines, solvers, and simulation models.</p>
           <a href="data/capitol_event_rankings.json" download class="btn-download">Download rankings.json</a>
         </div>
 
         <div class="kpi-card">
-          <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--s117-cyan);">🛡️ Alliance Standings CSV</h4>
-          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;">Alliance level aggregations including total points, member counts, and average points per player.</p>
+          <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--s117-cyan);" data-i18n="exp_allies_title">🛡️ Alliance Standings CSV</h4>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="exp_allies_desc">Alliance level aggregations including total points, member counts, and average points per player.</p>
           <a href="data/alliance_summary.csv" download class="btn-download">Download alliance_summary.csv</a>
         </div>
 
       </div>
 
       <div class="hero">
-        <h3 style="font-family: var(--font-display); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 0.75rem;">Data Extraction Methodology</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem;">
+        <h3 style="font-family: var(--font-display); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 0.75rem;" data-i18n="exp_method_title">Data Extraction Methodology</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem;" data-i18n="exp_method_p1">
           The Capitol War event leaderboard was captured directly from <strong>BlueStacks Air (Android 13 Tiramisu on Apple Silicon)</strong> using a fully automated ADB pipeline paired with on-device hardware-accelerated machine vision.
         </p>
         <ul style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.8; margin-left: 1.5rem;">
-          <li><strong>ADB Framebuffer Streaming:</strong> High-speed screencaps via <code>adb exec-out screencap -p</code> directly to memory.</li>
-          <li><strong>Apple Vision Framework:</strong> Native Swift worker utilizing <code>VNRecognizeTextRequest</code> on Apple Neural Engine for sub-300ms multilingual OCR (English, Russian Cyrillic, Korean, French accents).</li>
-          <li><strong>Asynchronous Pipelining:</strong> Swipes executed concurrently in worker threads during OCR inference, achieving a sustained rate of <strong>~1.03s per frame</strong>.</li>
-          <li><strong>Sliding Overlap Window:</strong> Every rank is seen in multiple consecutive frames, verified against strict monotonic point ordering (<code>points[N] &le; points[N-1]</code>) to guarantee 100% data integrity across all 1,398 entries.</li>
+          <li data-i18n="exp_feat_1">ADB Framebuffer Streaming: High-speed screencaps via adb exec-out screencap -p directly to memory.</li>
+          <li data-i18n="exp_feat_2">Apple Vision Framework: Native Swift worker utilizing VNRecognizeTextRequest on Apple Neural Engine for sub-300ms multilingual OCR (English, Russian Cyrillic, Korean, French accents).</li>
+          <li data-i18n="exp_feat_3">Asynchronous Pipelining: Swipes executed concurrently in worker threads during OCR inference, achieving a sustained rate of ~1.03s per frame.</li>
+          <li data-i18n="exp_feat_4">Sliding Overlap Window: Every rank is seen in multiple consecutive frames, verified against strict monotonic point ordering (points[N] &le; points[N-1]) to guarantee 100% data integrity across all 1,398 entries.</li>
         </ul>
       </div>
     </section>
@@ -995,27 +1022,27 @@
       <div class="modal-body">
         <div class="ally-stats-mini">
           <div class="ally-stat-box">
-            <div class="kpi-label">Members</div>
+            <div class="kpi-label" data-i18n="modal_members">Members</div>
             <div id="modalMemberCount" class="kpi-val" style="font-size: 1.2rem;">47</div>
           </div>
           <div class="ally-stat-box">
-            <div class="kpi-label">Total Points</div>
+            <div class="kpi-label" data-i18n="modal_total_pts">Total Points</div>
             <div id="modalTotalPts" class="kpi-val" style="font-size: 1.2rem;">87,167,396</div>
           </div>
           <div class="ally-stat-box">
-            <div class="kpi-label">Avg Pts / Player</div>
+            <div class="kpi-label" data-i18n="modal_avg_pts">Avg Pts / Player</div>
             <div id="modalAvgPts" class="kpi-val" style="font-size: 1.2rem;">1,854,625</div>
           </div>
         </div>
-        <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.5rem;">Participating Roster</div>
+        <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.5rem;" data-i18n="modal_roster_title">Participating Roster</div>
         <div class="table-container" style="max-height: 380px; overflow-y: auto;">
           <table>
             <thead>
               <tr>
-                <th style="width: 5.2rem;">Rank</th>
-                <th>Commander</th>
-                <th style="text-align: right;">Points</th>
-                <th style="text-align: right;">% Contrib</th>
+                <th style="width: 5.2rem;" data-i18n="col_rank">Rank</th>
+                <th data-i18n="col_commander">Commander</th>
+                <th style="text-align: right;" data-i18n="col_points">Points</th>
+                <th style="text-align: right;" data-i18n="modal_col_contrib">% Contrib</th>
               </tr>
             </thead>
             <tbody id="modalRosterBody"></tbody>
@@ -1026,7 +1053,7 @@
   </div>
 
   <footer>
-    <p>Z Route: Redemption Capitol War Event Intelligence &bull; Server 117 &bull; Maintained by <a href="https://github.com/JeffxLabs" target="_blank">JeffxLabs</a></p>
+    <p><span data-i18n="footer_text">Z Route: Redemption Capitol War Event Intelligence • Server 117 • Maintained by</span> <a href="https://github.com/JeffxLabs" target="_blank">JeffxLabs</a></p>
   </footer>
 
   <script>
@@ -1040,6 +1067,70 @@
     let currentPlayerServer = "all";
     let allianceSearchQuery = "";
     let playerSearchQuery = "";
+    let currentLang = "en";
+
+    // Localization helpers
+    function initLanguage() {
+      const saved = localStorage.getItem("zr_lang");
+      if (saved && window.I18N && window.I18N[saved]) {
+        currentLang = saved;
+      } else {
+        const navLangs = navigator.languages || [navigator.language || navigator.userLanguage || "en"];
+        for (const l of navLangs) {
+          const code = l.toLowerCase().split("-")[0];
+          if (window.I18N && window.I18N[code]) {
+            currentLang = code;
+            break;
+          }
+        }
+      }
+      const select = document.getElementById("langSelect");
+      if (select) {
+        select.value = currentLang;
+      }
+      applyTranslations();
+    }
+
+    function setLanguage(lang) {
+      if (window.I18N && window.I18N[lang]) {
+        currentLang = lang;
+        localStorage.setItem("zr_lang", lang);
+        applyTranslations();
+        renderHeroAndKPIs();
+        renderServerSpotlights();
+        renderAlliancesTable();
+        renderPlayersTable(false);
+      }
+    }
+
+    function t(key) {
+      if (window.I18N && window.I18N[currentLang] && window.I18N[currentLang][key]) {
+        return window.I18N[currentLang][key];
+      }
+      if (window.I18N && window.I18N["en"] && window.I18N["en"][key]) {
+        return window.I18N["en"][key];
+      }
+      return key;
+    }
+
+    function applyTranslations() {
+      document.documentElement.lang = currentLang;
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        const val = t(key);
+        if (val) el.textContent = val;
+      });
+      document.querySelectorAll("[data-i18n-ph]").forEach(el => {
+        const key = el.getAttribute("data-i18n-ph");
+        const val = t(key);
+        if (val) el.placeholder = val;
+      });
+    }
+
+    function formatNumber(num) {
+      const locale = (window.LANG_LOCALES && window.LANG_LOCALES[currentLang]) || undefined;
+      return (num || 0).toLocaleString(locale);
+    }
 
     // Load data
     function loadEventData(eventId) {
@@ -1075,10 +1166,6 @@
         });
     }
 
-    function formatNumber(num) {
-      return (num || 0).toLocaleString();
-    }
-
     function initDashboard() {
       // Ensure server_rank is assigned for all alliances and rankings
       const allyServerCounts = {};
@@ -1093,6 +1180,7 @@
         if (!p.server_rank) p.server_rank = playerServerCounts[p.server];
       });
 
+      applyTranslations();
       renderHeroAndKPIs();
       renderServerSpotlights();
       renderAlliancesTable();
@@ -1132,9 +1220,19 @@
       document.getElementById("s117Players").textContent = formatNumber(s117.players);
       document.getElementById("s117AvgPts").textContent = formatNumber(Math.round(s117.points / s117.players));
 
+      const s117Share = document.getElementById("s117SharePct");
+      if (s117Share) s117Share.textContent = s117.point_share_pct + "%";
+      const s117Roster = document.getElementById("s117RosterPct");
+      if (s117Roster && m.total_players) s117Roster.textContent = ((s117.players / m.total_players) * 100).toFixed(1) + "%";
+
       document.getElementById("s119TotalPts").textContent = formatNumber(s119.points);
       document.getElementById("s119Players").textContent = formatNumber(s119.players);
       document.getElementById("s119AvgPts").textContent = formatNumber(Math.round(s119.points / s119.players));
+
+      const s119Share = document.getElementById("s119SharePct");
+      if (s119Share) s119Share.textContent = s119.point_share_pct + "%";
+      const s119Roster = document.getElementById("s119RosterPct");
+      if (s119Roster && m.total_players) s119Roster.textContent = ((s119.players / m.total_players) * 100).toFixed(1) + "%";
     }
 
     function renderServerSpotlights() {
@@ -1148,11 +1246,11 @@
             <td class="rank-cell">
               <div class="dual-rank-cell">
                 <span class="rank-primary ${idx === 0 ? 'medal-1' : idx === 1 ? 'medal-2' : idx === 2 ? 'medal-3' : ''}">#${idx + 1}</span>
-                <span class="rank-secondary">#${a.rank} ovr</span>
+                <span class="rank-secondary">(${a.rank})</span>
               </div>
             </td>
             <td style="font-weight: 600; cursor: pointer; color: var(--accent);" onclick="openAllianceModal('${escapeHtml(a.alliance)}')">${escapeHtml(a.alliance)}</td>
-            <td style="text-align: right; font-family: var(--font-mono);">${a.members_count}</td>
+            <td style="text-align: right; font-family: var(--font-mono);">${formatNumber(a.members_count)}</td>
             <td class="pts-cell">${formatNumber(a.total_points)}</td>
             <td style="text-align: right; font-family: var(--font-mono); color: var(--text-muted);">${formatNumber(a.avg_points)}</td>
           </tr>
@@ -1169,7 +1267,7 @@
       const isFiltered = currentAllianceServer !== "all";
 
       if (rankTh) {
-        rankTh.textContent = isFiltered ? `S${currentAllianceServer} Rank (Overall) ⬍` : "Rank ⬍";
+        rankTh.textContent = isFiltered ? `S${currentAllianceServer} ${t("col_rank")} ⬍` : `${t("col_rank")} ⬍`;
       }
 
       let list = eventData.alliances;
@@ -1187,15 +1285,11 @@
         const sRank = a.server_rank || a.rank;
         const rankDisplay = isFiltered ? `
           <div class="dual-rank-cell">
-            <span class="rank-primary ${sRank === 1 ? 'medal-1' : sRank === 2 ? 'medal-2' : sRank === 3 ? 'medal-3' : ''}">
-              #${sRank}
-            </span>
-            <span class="rank-secondary">#${a.rank} overall</span>
+            <span class="rank-primary ${sRank === 1 ? 'medal-1' : sRank === 2 ? 'medal-2' : sRank === 3 ? 'medal-3' : ''}">#${sRank}</span>
+            <span class="rank-secondary">(${a.rank})</span>
           </div>
         ` : `
-          <span class="rank-primary ${a.rank === 1 ? 'medal-1' : a.rank === 2 ? 'medal-2' : a.rank === 3 ? 'medal-3' : ''}">
-            #${a.rank}
-          </span>
+          <span class="rank-primary ${a.rank === 1 ? 'medal-1' : a.rank === 2 ? 'medal-2' : a.rank === 3 ? 'medal-3' : ''}">#${a.rank}</span>
         `;
 
         return `
@@ -1209,7 +1303,7 @@
               S${a.server}
             </span>
           </td>
-          <td style="text-align: right; font-family: var(--font-mono);">${a.members_count}</td>
+          <td style="text-align: right; font-family: var(--font-mono);">${formatNumber(a.members_count)}</td>
           <td class="pts-cell">${formatNumber(a.total_points)}</td>
           <td style="text-align: right; font-family: var(--font-mono); color: var(--text-muted);">${formatNumber(a.avg_points)}</td>
           <td>
@@ -1217,7 +1311,7 @@
             <span style="font-size: 0.75rem; color: var(--text-dim);">(${formatNumber(a.top_points)})</span>
           </td>
           <td style="text-align: center;">
-            <button class="filter-btn" style="padding: 0.2rem 0.6rem; font-size: 0.75rem;" onclick="openAllianceModal('${escapeHtml(a.alliance)}')">View Roster</button>
+            <button class="filter-btn" style="padding: 0.2rem 0.6rem; font-size: 0.75rem;" onclick="openAllianceModal('${escapeHtml(a.alliance)}')">${t("view_roster")}</button>
           </td>
         </tr>
       `;}).join("");
@@ -1245,11 +1339,12 @@
       const isFiltered = currentPlayerServer !== "all";
 
       if (pRankTh) {
-        pRankTh.textContent = isFiltered ? `S${currentPlayerServer} Rank (Overall) ⬍` : "Rank ⬍";
+        pRankTh.textContent = isFiltered ? `S${currentPlayerServer} ${t("col_rank")} ⬍` : `${t("col_rank")} ⬍`;
       }
 
       const filtered = getFilteredPlayers();
-      document.getElementById("filteredPlayerCount").textContent = formatNumber(filtered.length);
+      const countEl = document.getElementById("filteredPlayerCount");
+      if (countEl) countEl.textContent = formatNumber(filtered.length);
 
       const itemsToShow = filtered.slice(0, playerPage * PLAYERS_PER_PAGE);
 
@@ -1257,15 +1352,11 @@
         const sRank = p.server_rank || p.rank;
         const rankDisplay = isFiltered ? `
           <div class="dual-rank-cell">
-            <span class="rank-primary ${sRank === 1 ? 'medal-1' : sRank === 2 ? 'medal-2' : sRank === 3 ? 'medal-3' : ''}">
-              ${sRank === 1 ? '🥇 1' : sRank === 2 ? '🥈 2' : sRank === 3 ? '🥉 3' : '#' + sRank}
-            </span>
-            <span class="rank-secondary">#${p.rank} overall</span>
+            <span class="rank-primary ${sRank === 1 ? 'medal-1' : sRank === 2 ? 'medal-2' : sRank === 3 ? 'medal-3' : ''}">#${sRank}</span>
+            <span class="rank-secondary">(${p.rank})</span>
           </div>
         ` : `
-          <span class="rank-primary ${p.rank === 1 ? 'medal-1' : p.rank === 2 ? 'medal-2' : p.rank === 3 ? 'medal-3' : ''}">
-            ${p.rank === 1 ? '🥇 1' : p.rank === 2 ? '🥈 2' : p.rank === 3 ? '🥉 3' : '#' + p.rank}
-          </span>
+          <span class="rank-primary ${p.rank === 1 ? 'medal-1' : p.rank === 2 ? 'medal-2' : p.rank === 3 ? 'medal-3' : ''}">#${p.rank}</span>
         `;
 
         return `
@@ -1283,11 +1374,13 @@
       `;}).join("");
 
       const loadMoreBtn = document.getElementById("loadMoreBtn");
-      if (itemsToShow.length >= filtered.length) {
-        loadMoreBtn.style.display = "none";
-      } else {
-        loadMoreBtn.style.display = "inline-block";
-        loadMoreBtn.textContent = `Load More Commanders (${itemsToShow.length} of ${formatNumber(filtered.length)})`;
+      if (loadMoreBtn) {
+        if (itemsToShow.length >= filtered.length) {
+          loadMoreBtn.style.display = "none";
+        } else {
+          loadMoreBtn.style.display = "inline-block";
+          loadMoreBtn.textContent = `${t("load_more_btn")} (${formatNumber(itemsToShow.length)} / ${formatNumber(filtered.length)})`;
+        }
       }
     }
 
@@ -1295,9 +1388,10 @@
       const ally = eventData.alliances.find(a => a.alliance === allyName);
       if (!ally) return;
 
+      const serverType = ally.server === '117' ? `(${t("home_label")})` : `(${t("visiting_label")})`;
       document.getElementById("modalAllyTitle").textContent = ally.alliance;
-      document.getElementById("modalAllyServer").textContent = `Server ${ally.server} ${ally.server === '117' ? '(Home Server)' : '(Visiting)'}`;
-      document.getElementById("modalMemberCount").textContent = ally.members_count;
+      document.getElementById("modalAllyServer").textContent = `Server ${ally.server} ${serverType}`;
+      document.getElementById("modalMemberCount").textContent = formatNumber(ally.members_count);
       document.getElementById("modalTotalPts").textContent = formatNumber(ally.total_points);
       document.getElementById("modalAvgPts").textContent = formatNumber(ally.avg_points);
 
@@ -1309,7 +1403,7 @@
             <td class="rank-cell">
               <div class="dual-rank-cell">
                 <span class="rank-primary ${idx === 0 ? 'medal-1' : idx === 1 ? 'medal-2' : idx === 2 ? 'medal-3' : ''}">#${idx + 1}</span>
-                <span class="rank-secondary">#${m.rank} ovr</span>
+                <span class="rank-secondary">(${m.rank})</span>
               </div>
             </td>
             <td class="cmd-name">${escapeHtml(m.commander)}</td>
@@ -1386,7 +1480,12 @@
       loadEventData(currentEventId);
     });
 
+    document.getElementById("langSelect").addEventListener("change", (e) => {
+      setLanguage(e.target.value);
+    });
+
     // Initialize
+    initLanguage();
     loadEventData(currentEventId);
   </script>
 </body>
