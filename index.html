@@ -731,7 +731,7 @@
         <div class="event-selector-wrap">
           <label for="eventSelect" style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 600;" data-i18n="event_label">Event:</label>
           <select id="eventSelect" class="event-select">
-            <option value="2026-09-19-s117-vs-s119">2026-09-19: Capitol War (S117 vs S119)</option>
+            <option value="2026-09-19-s117-vs-s119" data-i18n="event_option_1">2026-09-19: Capitol War (S117 vs S119)</option>
           </select>
         </div>
         <div class="lang-selector-wrap">
@@ -758,7 +758,7 @@
     <section class="hero">
       <div class="hero-header">
         <div>
-          <h1 class="hero-title" id="eventTitle">Capitol War: Server 117 vs Server 119</h1>
+          <h1 class="hero-title" id="eventTitle" data-i18n="event_title">Capitol War: Server 117 vs Server 119</h1>
           <p class="hero-desc" id="eventDesc" data-i18n="hero_desc">Full event rankings, alliance participation, and server-vs-server battlefield performance.</p>
         </div>
         <div class="hero-tags">
@@ -1231,6 +1231,23 @@
         const val = t(key);
         if (val) el.placeholder = val;
       });
+
+      // Synchronize eventTitle with localized template if available
+      const eventTitleEl = document.getElementById("eventTitle");
+      if (eventTitleEl) {
+        const m = eventData.meta || {};
+        const homeSrv = m.home_server || "117";
+        const oppSrv = m.opponent_server || "119";
+        const titleTpl = t("event_title_template");
+        if (titleTpl && titleTpl.includes("{home}")) {
+          eventTitleEl.textContent = titleTpl.replace("{home}", homeSrv).replace("{opp}", oppSrv);
+        } else if (t("event_title")) {
+          eventTitleEl.textContent = t("event_title");
+        }
+      }
+
+      // Update page title
+      document.title = `${t("brand_title")} — ${t("event_title") || "Capitol War"}`;
     }
 
     function formatNumber(num) {
@@ -1294,8 +1311,17 @@
     }
 
     function renderHeroAndKPIs() {
-      const m = eventData.meta;
-      document.getElementById("eventTitle").textContent = m.title || "Capitol War";
+      const m = eventData.meta || {};
+      const homeSrv = m.home_server || "117";
+      const oppSrv = m.opponent_server || "119";
+      const titleTpl = t("event_title_template");
+      if (titleTpl && titleTpl.includes("{home}")) {
+        document.getElementById("eventTitle").textContent = titleTpl.replace("{home}", homeSrv).replace("{opp}", oppSrv);
+      } else if (t("event_title")) {
+        document.getElementById("eventTitle").textContent = t("event_title");
+      } else {
+        document.getElementById("eventTitle").textContent = m.title || "Capitol War";
+      }
       document.getElementById("totalPointsVal").textContent = formatNumber(m.total_points);
       document.getElementById("totalPlayersVal").textContent = formatNumber(m.total_players);
       document.getElementById("totalAlliancesVal").textContent = formatNumber(m.unique_alliances);
