@@ -1,0 +1,6 @@
+.DS_Store
+*.png
+__pycache__/
+*.pyc
+tools/vision_ocr
+scratch/
