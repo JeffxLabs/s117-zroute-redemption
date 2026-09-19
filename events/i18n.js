@@ -26,8 +26,8 @@ window.I18N = {
     "card_top_alliance": "Top Alliance",
     "war_share": "War Share",
     "of_roster": "of total roster",
-    "top15_s117": "Top 15 Server 117 Alliances",
-    "top15_s119": "Top 15 Server 119 Alliances",
+    "top15_s117": "Top 10 Server 117 Alliances",
+    "top15_s119": "Top 10 Server 119 Alliances",
     "col_rank": "Rank",
     "col_alliance": "Alliance",
     "col_members": "Members",
@@ -68,7 +68,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption Capitol War Event Intelligence • Server 117 • Maintained by",
     "event_title": "Capitol War: Server 117 vs Server 119",
     "event_title_template": "Capitol War: Server {home} vs Server {opp}",
-    "event_option_1": "2026-09-19: Capitol War (S117 vs S119)"
+    "event_option_1": "2026-09-19: Capitol War (S117 vs S119)",
+    "top10_s117": "Top 10 Server 117 Alliances",
+    "top10_s119": "Top 10 Server 119 Alliances"
   },
   "fr": {
     "brand_title": "Z Route: Redemption — Renseignement S117",
@@ -97,8 +99,8 @@ window.I18N = {
     "card_top_alliance": "Meilleure alliance",
     "war_share": "Part de guerre",
     "of_roster": "de l effectif total",
-    "top15_s117": "Top 15 Alliances Serveur 117",
-    "top15_s119": "Top 15 Alliances Serveur 119",
+    "top15_s117": "Top 10 Alliances Serveur 117",
+    "top15_s119": "Top 10 Alliances Serveur 119",
     "col_rank": "Rang",
     "col_alliance": "Alliance",
     "col_members": "Membres",
@@ -139,7 +141,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption Renseignement Guerre du Capitole • Serveur 117 • Maintenu par",
     "event_title": "Guerre du Capitole : Serveur 117 vs Serveur 119",
     "event_title_template": "Guerre du Capitole : Serveur {home} vs Serveur {opp}",
-    "event_option_1": "2026-09-19 : Guerre du Capitole (S117 vs S119)"
+    "event_option_1": "2026-09-19 : Guerre du Capitole (S117 vs S119)",
+    "top10_s117": "Top 10 Alliances Serveur 117",
+    "top10_s119": "Top 10 Alliances Serveur 119"
   },
   "ru": {
     "brand_title": "Z Route: Redemption — Разведданные S117",
@@ -168,8 +172,8 @@ window.I18N = {
     "card_top_alliance": "Лучший альянс",
     "war_share": "Доля в войне",
     "of_roster": "от общего состава",
-    "top15_s117": "Топ-15 Альянсов Сервера 117",
-    "top15_s119": "Топ-15 Альянсов Сервера 119",
+    "top15_s117": "Топ-10 Альянсов Сервера 117",
+    "top15_s119": "Топ-10 Альянсов Сервера 119",
     "col_rank": "Место",
     "col_alliance": "Альянс",
     "col_members": "Игроки",
@@ -210,7 +214,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption Разведка Битвы за Капитолий • Сервер 117 • Проект",
     "event_title": "Битва за Капитолий: Сервер 117 против Сервера 119",
     "event_title_template": "Битва за Капитолий: Сервер {home} против Сервера {opp}",
-    "event_option_1": "2026-09-19: Битва за Капитолий (S117 vs S119)"
+    "event_option_1": "2026-09-19: Битва за Капитолий (S117 vs S119)",
+    "top10_s117": "Топ-10 Альянсов Сервера 117",
+    "top10_s119": "Топ-10 Альянсов Сервера 119"
   },
   "tr": {
     "brand_title": "Z Route: Redemption — S117 İstihbarat",
@@ -239,8 +245,8 @@ window.I18N = {
     "card_top_alliance": "En İyi İttifak",
     "war_share": "Savaş Payı",
     "of_roster": "toplam kadrodan",
-    "top15_s117": "Sunucu 117 En İyi 15 İttifak",
-    "top15_s119": "Sunucu 119 En İyi 15 İttifak",
+    "top15_s117": "Sunucu 117 En İyi 10 İttifak",
+    "top15_s119": "Sunucu 119 En İyi 10 İttifak",
     "col_rank": "Sıra",
     "col_alliance": "İttifak",
     "col_members": "Üyeler",
@@ -281,7 +287,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption Başkent Savaşı İstihbaratı • Sunucu 117 • Geliştiren",
     "event_title": "Başkent Savaşı: Sunucu 117 - Sunucu 119",
     "event_title_template": "Başkent Savaşı: Sunucu {home} - Sunucu {opp}",
-    "event_option_1": "2026-09-19: Başkent Savaşı (S117 vs S119)"
+    "event_option_1": "2026-09-19: Başkent Savaşı (S117 vs S119)",
+    "top10_s117": "Sunucu 117 En İyi 10 İttifak",
+    "top10_s119": "Sunucu 119 En İyi 10 İttifak"
   },
   "pl": {
     "brand_title": "Z Route: Redemption — Wywiad S117",
@@ -310,8 +318,8 @@ window.I18N = {
     "card_top_alliance": "Najlepszy sojusz",
     "war_share": "Udział w wojnie",
     "of_roster": "całego składu",
-    "top15_s117": "Top 15 Sojuszy Serwera 117",
-    "top15_s119": "Top 15 Sojuszy Serwera 119",
+    "top15_s117": "Top 10 Sojuszy Serwera 117",
+    "top15_s119": "Top 10 Sojuszy Serwera 119",
     "col_rank": "Pozycja",
     "col_alliance": "Sojusz",
     "col_members": "Członkowie",
@@ -352,7 +360,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption Wywiad Wojny o Kapitol • Serwer 117 • Utrzymywany przez",
     "event_title": "Wojna o Kapitol: Serwer 117 kontra Serwer 119",
     "event_title_template": "Wojna o Kapitol: Serwer {home} kontra Serwer {opp}",
-    "event_option_1": "2026-09-19: Wojna o Kapitol (S117 vs S119)"
+    "event_option_1": "2026-09-19: Wojna o Kapitol (S117 vs S119)",
+    "top10_s117": "Top 10 Sojuszy Serwera 117",
+    "top10_s119": "Top 10 Sojuszy Serwera 119"
   },
   "es": {
     "brand_title": "Z Route: Redemption — Inteligencia S117",
@@ -381,8 +391,8 @@ window.I18N = {
     "card_top_alliance": "Mejor alianza",
     "war_share": "Cuota de guerra",
     "of_roster": "del total de jugadores",
-    "top15_s117": "Top 15 Alianzas Servidor 117",
-    "top15_s119": "Top 15 Alianzas Servidor 119",
+    "top15_s117": "Top 10 Alianzas Servidor 117",
+    "top15_s119": "Top 10 Alianzas Servidor 119",
     "col_rank": "Rango",
     "col_alliance": "Alianza",
     "col_members": "Miembros",
@@ -423,7 +433,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption Inteligencia de la Guerra del Capitolio • Servidor 117 • Mantenido por",
     "event_title": "Guerra del Capitolio: Servidor 117 vs Servidor 119",
     "event_title_template": "Guerra del Capitolio: Servidor {home} vs Servidor {opp}",
-    "event_option_1": "2026-09-19: Guerra del Capitolio (S117 vs S119)"
+    "event_option_1": "2026-09-19: Guerra del Capitolio (S117 vs S119)",
+    "top10_s117": "Top 10 Alianzas Servidor 117",
+    "top10_s119": "Top 10 Alianzas Servidor 119"
   },
   "pt": {
     "brand_title": "Z Route: Redemption — Inteligência S117",
@@ -452,8 +464,8 @@ window.I18N = {
     "card_top_alliance": "Melhor aliança",
     "war_share": "Participação na guerra",
     "of_roster": "do total de jogadores",
-    "top15_s117": "Top 15 Alianças do Servidor 117",
-    "top15_s119": "Top 15 Alianças do Servidor 119",
+    "top15_s117": "Top 10 Alianças do Servidor 117",
+    "top15_s119": "Top 10 Alianças do Servidor 119",
     "col_rank": "Posição",
     "col_alliance": "Aliança",
     "col_members": "Membros",
@@ -494,7 +506,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption Inteligência da Guerra do Capitólio • Servidor 117 • Mantido por",
     "event_title": "Guerra do Capitólio: Servidor 117 vs Servidor 119",
     "event_title_template": "Guerra do Capitólio: Servidor {home} vs Servidor {opp}",
-    "event_option_1": "2026-09-19: Guerra do Capitólio (S117 vs S119)"
+    "event_option_1": "2026-09-19: Guerra do Capitólio (S117 vs S119)",
+    "top10_s117": "Top 10 Alianças do Servidor 117",
+    "top10_s119": "Top 10 Alianças do Servidor 119"
   },
   "de": {
     "brand_title": "Z Route: Redemption — S117 Aufklärung",
@@ -523,8 +537,8 @@ window.I18N = {
     "card_top_alliance": "Beste Allianz",
     "war_share": "Kriegsanteil",
     "of_roster": "des Gesamtkaders",
-    "top15_s117": "Top 15 Server 117 Allianzen",
-    "top15_s119": "Top 15 Server 119 Allianzen",
+    "top15_s117": "Top 10 Server 117 Allianzen",
+    "top15_s119": "Top 10 Server 119 Allianzen",
     "col_rank": "Rang",
     "col_alliance": "Allianz",
     "col_members": "Mitglieder",
@@ -565,7 +579,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption Kapitol-Krieg Aufklärung • Server 117 • Betreut von",
     "event_title": "Kapitol-Krieg: Server 117 gegen Server 119",
     "event_title_template": "Kapitol-Krieg: Server {home} gegen Server {opp}",
-    "event_option_1": "2026-09-19: Kapitol-Krieg (S117 vs S119)"
+    "event_option_1": "2026-09-19: Kapitol-Krieg (S117 vs S119)",
+    "top10_s117": "Top 10 Server 117 Allianzen",
+    "top10_s119": "Top 10 Server 119 Allianzen"
   },
   "ko": {
     "brand_title": "Z Route: Redemption — S117 전투 정보",
@@ -594,8 +610,8 @@ window.I18N = {
     "card_top_alliance": "1위 연맹",
     "war_share": "전쟁 기여율",
     "of_roster": "전체 인원 대비",
-    "top15_s117": "서버 117 상위 15개 연맹",
-    "top15_s119": "서버 119 상위 15개 연맹",
+    "top15_s117": "서버 117 상위 10개 연맹",
+    "top15_s119": "서버 119 상위 10개 연맹",
     "col_rank": "순위",
     "col_alliance": "연맹",
     "col_members": "인원",
@@ -636,7 +652,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption 국회의사당 전쟁 전황 분석 • 서버 117 • 개발 및 유지보수:",
     "event_title": "캐피톨전: 117 서버 vs 119 서버",
     "event_title_template": "캐피톨전: {home} 서버 vs {opp} 서버",
-    "event_option_1": "2026-09-19: 캐피톨전 (S117 vs S119)"
+    "event_option_1": "2026-09-19: 캐피톨전 (S117 vs S119)",
+    "top10_s117": "서버 117 상위 10개 연맹",
+    "top10_s119": "서버 119 상위 10개 연맹"
   },
   "ja": {
     "brand_title": "Z Route: Redemption — S117 軍事情報",
@@ -665,8 +683,8 @@ window.I18N = {
     "card_top_alliance": "トップ同盟",
     "war_share": "戦争シェア",
     "of_roster": "全参加者中",
-    "top15_s117": "サーバー117 上位15同盟",
-    "top15_s119": "サーバー119 上位15同盟",
+    "top15_s117": "サーバー117 上位10同盟",
+    "top15_s119": "サーバー119 上位10同盟",
     "col_rank": "順位",
     "col_alliance": "同盟",
     "col_members": "メンバー",
@@ -707,7 +725,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption キャピトル戦争インテリジェンス • サーバー117 • 開発・運営:",
     "event_title": "キャピトル戦：サーバー117 vs サーバー119",
     "event_title_template": "キャピトル戦：サーバー{home} vs サーバー{opp}",
-    "event_option_1": "2026-09-19：キャピトル戦 (S117 vs S119)"
+    "event_option_1": "2026-09-19：キャピトル戦 (S117 vs S119)",
+    "top10_s117": "サーバー117 上位10同盟",
+    "top10_s119": "サーバー119 上位10同盟"
   },
   "zh": {
     "brand_title": "Z Route: Redemption — S117 战报情报",
@@ -736,8 +756,8 @@ window.I18N = {
     "card_top_alliance": "头号联盟",
     "war_share": "战局份额",
     "of_roster": "占总参战人数",
-    "top15_s117": "117服前15强联盟",
-    "top15_s119": "119服前15强联盟",
+    "top15_s117": "117服前10强联盟",
+    "top15_s119": "119服前10强联盟",
     "col_rank": "排名",
     "col_alliance": "联盟",
     "col_members": "成员数",
@@ -778,7 +798,9 @@ window.I18N = {
     "footer_text": "Z Route: Redemption 国会之战战报分析系统 • 117服 • 维护者:",
     "event_title": "国会战：117区 vs 119区",
     "event_title_template": "国会战：{home}区 vs {opp}区",
-    "event_option_1": "2026-09-19：国会战 (117区 vs 119区)"
+    "event_option_1": "2026-09-19：国会战 (117区 vs 119区)",
+    "top10_s117": "117服前10强联盟",
+    "top10_s119": "119服前10强联盟"
   }
 };
 

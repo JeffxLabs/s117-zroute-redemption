@@ -884,7 +884,7 @@
         <!-- S117 Top Alliances -->
         <div class="table-container">
           <div style="padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s117-cyan);" data-i18n="top15_s117">Top 15 Server 117 Alliances</h4>
+            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s117-cyan);" data-i18n="top10_s117">Top 10 Server 117 Alliances</h4>
             <span class="server-pill pill-117" data-i18n="home_label">Home</span>
           </div>
           <table>
@@ -904,7 +904,7 @@
         <!-- S119 Top Alliances -->
         <div class="table-container">
           <div style="padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s119-rose);" data-i18n="top15_s119">Top 15 Server 119 Alliances</h4>
+            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s119-rose);" data-i18n="top10_s119">Top 10 Server 119 Alliances</h4>
             <span class="server-pill pill-119" data-i18n="visiting_label">Visiting</span>
           </div>
           <table>
@@ -1369,8 +1369,8 @@
     }
 
     function renderServerSpotlights() {
-      const s117Allies = eventData.alliances.filter(a => a.server === "117").slice(0, 15);
-      const s119Allies = eventData.alliances.filter(a => a.server === "119").slice(0, 15);
+      const s117Allies = eventData.alliances.filter(a => a.server === "117").slice(0, 10);
+      const s119Allies = eventData.alliances.filter(a => a.server === "119").slice(0, 10);
 
       const renderRows = (list, targetId) => {
         const body = document.getElementById(targetId);
