@@ -2,15 +2,15 @@
 
 Complete player rankings, alliance standings, and points data extracted from the **Capitol War Event** for **Server 117 (S117)** vs **Server 119 (S119)** in *Z Route: Redemption* (*Last War: Survival*).
 
-The dataset captures **1,211 unique commanders**, **144 alliances**, and **773,066,716 total war points** with 100% continuous coverage from Rank 1 down to the final participant.
+The dataset captures **1,398 unique commanders**, **156 alliances**, and **773,073,925 total war points** with 100% continuous coverage from Rank 1 down to the absolute final participant (Rank 1,398).
 
 ---
 
 ## Event Overview & Key Statistics
 
-- **Total Commanders Tracked:** 1,211
-- **Total War Points:** 773,066,716
-- **Unique Alliances:** 144
+- **Total Commanders Tracked:** 1,398
+- **Total War Points:** 773,073,925
+- **Unique Alliances:** 156
 - **Event Matchup:** Server 117 (Home) vs Server 119 (Visiting) + cross-server participants (S113)
 
 ### Server Points Breakdown
@@ -18,7 +18,7 @@ The dataset captures **1,211 unique commanders**, **144 alliances**, and **773,0
 | Server | Participants | Total Points | % Share | Avg Pts / Player |
 | :--- | :---: | :---: | :---: | :---: |
 | **Server 119** (Visiting) | 498 | 500,233,739 | 64.7% | 1,004,485 |
-| **Server 117** (Home / Unlabeled) | 694 | 270,554,655 | 35.0% | 389,848 |
+| **Server 117** (Home / Unlabeled) | 881 | 270,561,864 | 35.0% | 307,108 |
 | **Server 113** (Cross-server) | 19 | 2,278,322 | 0.3% | 119,911 |
 
 ---
@@ -88,10 +88,10 @@ The dataset captures **1,211 unique commanders**, **144 alliances**, and **773,0
 
 ```
 .
-├── README.md                           # This documentation
+├── README.md                           # Documentation and statistical summary
 ├── data/
-│   ├── capitol_event_rankings.csv       # Complete 1,211 rows: Rank, Player Name, Alliance, Points
-│   ├── capitol_event_rankings.json      # Structured JSON representation of all commanders
+│   ├── capitol_event_rankings.csv       # Complete 1,398 rows: Rank, Player Name, Alliance, Points
+│   ├── capitol_event_rankings.json      # Structured JSON representation of all 1,398 commanders
 │   └── alliance_summary.csv            # Alliance standings: Participants, Total Pts, Avg Pts, Top Player
 └── tools/
     ├── analyze.py                      # Analytics script generating tables & summaries
@@ -107,7 +107,7 @@ The dataset captures **1,211 unique commanders**, **144 alliances**, and **773,0
 2. **Device Interface:** Android Debug Bridge (`adb`) at `127.0.0.1:5565` streaming raw frame buffers via `adb exec-out screencap -p`.
 3. **Local Machine Vision:** A compiled Swift binary utilizing Apple's native `VNRecognizeTextRequest` (`Vision` framework) with Neural Engine hardware acceleration, multilingual support (English, Russian Cyrillic, Korean, French accents), and bounding box geometry.
 4. **Asynchronous Pipelining:** Swipes are dispatched asynchronously in background worker threads while the Vision engine processes frames concurrently, achieving an average throughput of **~1.03 seconds per screen**.
-5. **Sliding Overlap Window:** Each scroll step advances by ~4-5 ranks while visible windows capture 8-9 ranks. Overlapping observations are scored for visual center proximity, ensuring zero missed entries and monotonic point validity across all 1,211 positions.
+5. **Sliding Overlap Window:** Each scroll step advances by ~4-5 ranks while visible windows capture 8-9 ranks. Overlapping observations are scored for visual center proximity, ensuring zero missed entries and monotonic point validity across all 1,398 positions.
 
 ---
 
