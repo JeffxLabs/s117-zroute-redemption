@@ -1049,15 +1049,15 @@
         <div class="ally-stats-mini">
           <div class="ally-stat-box">
             <div class="kpi-label" data-i18n="modal_members">Members</div>
-            <div id="modalMemberCount" class="kpi-val" style="font-size: 1.2rem;">47</div>
+            <div id="modalMemberCount" class="kpi-val" style="font-size: 1.2rem;">50</div>
           </div>
           <div class="ally-stat-box">
             <div class="kpi-label" data-i18n="modal_total_pts">Total Points</div>
-            <div id="modalTotalPts" class="kpi-val" style="font-size: 1.2rem;">87,167,396</div>
+            <div id="modalTotalPts" class="kpi-val" style="font-size: 1.2rem;">96,460,732</div>
           </div>
           <div class="ally-stat-box">
             <div class="kpi-label" data-i18n="modal_avg_pts">Avg Pts / Player</div>
-            <div id="modalAvgPts" class="kpi-val" style="font-size: 1.2rem;">1,854,625</div>
+            <div id="modalAvgPts" class="kpi-val" style="font-size: 1.2rem;">1,929,214</div>
           </div>
         </div>
         <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.5rem;" data-i18n="modal_roster_title">Participating Roster</div>
@@ -1068,7 +1068,7 @@
                 <th style="width: 5.2rem;" data-i18n="col_rank">Rank</th>
                 <th data-i18n="col_commander">Commander</th>
                 <th style="text-align: right;" data-i18n="col_points">Points</th>
-                <th style="text-align: right;" data-i18n="modal_col_contrib">% Contrib</th>
+                <th style="text-align: right;" data-i18n="modal_col_contrib" title="Percentage of this alliance's total points">% Contrib</th>
               </tr>
             </thead>
             <tbody id="modalRosterBody"></tbody>
@@ -1530,7 +1530,12 @@
 
       const rosterBody = document.getElementById("modalRosterBody");
       rosterBody.innerHTML = ally.members.map((m, idx) => {
-        const pct = ally.total_points > 0 ? ((m.points / ally.total_points) * 100).toFixed(1) : 0;
+        let pctDisplay = "0.0%";
+        let rawPct = 0;
+        if (ally.total_points > 0 && m.points > 0) {
+          rawPct = (m.points / ally.total_points) * 100;
+          pctDisplay = rawPct < 0.05 ? "<0.1%" : rawPct.toFixed(1) + "%";
+        }
         return `
           <tr>
             <td class="rank-cell">
@@ -1541,7 +1546,7 @@
             </td>
             <td class="cmd-name">${escapeHtml(m.commander)}</td>
             <td class="pts-cell">${formatNumber(m.points)}</td>
-            <td style="text-align: right; font-family: var(--font-mono); color: var(--text-dim);">${pct}%</td>
+            <td style="text-align: right; font-family: var(--font-mono); color: var(--text-dim);" title="${formatNumber(m.points)} / ${formatNumber(ally.total_points)} points (${rawPct.toFixed(2)}%)">${pctDisplay}</td>
           </tr>
         `;
       }).join("");
